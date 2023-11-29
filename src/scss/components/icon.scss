@@ -1,0 +1,23 @@
+.icon {
+  display: block;
+  fill: $color-accent;
+
+  &--arrow {
+    stroke: $color-accent;
+  }
+
+  &--burger-open {
+    stroke: $color-accent;
+    stroke-width: 2;
+  }
+
+  &--close-button {
+    stroke: $color-accent;
+    stroke-width: 2;
+  }
+
+  &--copyright {
+    display: inline;
+    fill: $color-copyright;
+  }
+}

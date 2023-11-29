@@ -1,0 +1,341 @@
+{
+  "products": [
+    {
+      "name": "High",
+      "image": "high.jpg",
+      "description": "Увлажняющий крем идеально подходит для повседневного ухода за молодой кожей. Крем равномерно распределяется по поверхности благодаря легкой текстуре, обеспечивает глубокое увлажнение, регенерацию клеток.",
+      "price": 199,
+      "rating": 3,
+      "category": "Уход для лица",
+      "subcategory": "Крем для лица",
+      "skin": "Нормальная",
+      "ingredients": [
+        "Aqua",
+        "Cyclomethicone",
+        "Dicaprylyl Carbonate",
+        "Butylene Glycol",
+        "Glycerin",
+        "Tapioca Starch",
+        "Nelumbium Speciosum Flower Extract",
+        "Calendula Officinalis Flower Extract",
+        "Propylene Glycol",
+        "Tocopherol",
+        "Glycine Soja Oil",
+        "Dimethiconol",
+        "Citronellol",
+        "Limonene"
+      ],
+      "volume": [
+        "30ml",
+        "50ml",
+        "75ml"
+      ]
+    },
+    {
+      "name": "Rest",
+      "image": "rest.jpg",
+      "description": "Минеральная пудра обеспечивает идеальную матовость и гладкость кожи. Подходит для фиксации макияжа и создания безупречного внешнего вида.",
+      "price": 159,
+      "rating": 7,
+      "category": "Уход для лица",
+      "subcategory": "Минеральная пудра",
+      "skin": "Жирная",
+      "ingredients": [
+        "Aqua",
+        "Cyclomethicone",
+        "Talc",
+        "Titanium Dioxide",
+        "Silica",
+        "Zinc Oxide",
+        "Mica",
+        "Butylene Glycol",
+        "Glycerin",
+        "Tapioca Starch",
+        "Propylene Glycol",
+        "Tocopherol",
+        "Glycine Soja Oil",
+        "Dimethiconol"
+      ],
+      "volume": [
+        "10g",
+        "15g",
+        "20g"
+      ]
+    },
+    {
+      "name": "Rose",
+      "image": "rose.jpg",
+      "description": "Увлажняющий крем идеально подходит для повседневного ухода за молодой кожей. Крем равномерно распределяется по поверхности благодаря легкой текстуре, обеспечивает глубокое увлажнение, регенерацию клеток.",
+      "price": 249,
+      "rating": 2,
+      "category": "Уход для лица",
+      "subcategory": "Крем для лица",
+      "skin": "Сухая",
+      "ingredients": [
+        "Aqua",
+        "Cyclomethicone",
+        "Dicaprylyl Carbonate",
+        "Butylene Glycol",
+        "Glycerin",
+        "Tapioca Starch",
+        "Nelumbium Speciosum Flower Extract",
+        "Calendula Officinalis Flower Extract",
+        "Propylene Glycol",
+        "Tocopherol",
+        "Glycine Soja Oil",
+        "Dimethiconol",
+        "Citronellol",
+        "Limonene"
+      ],
+      "volume": [
+        "30ml",
+        "50ml"
+      ]
+    },
+    {
+      "name": "Milk",
+      "image": "milk.jpg",
+      "description": "Масло для тела питает и увлажняет кожу, придавая ей нежность и мягкость. Идеально после душа или ванны для ухода за сухой кожей.",
+      "price": 149,
+      "rating": 9,
+      "category": "Уход для тела",
+      "subcategory": "Масло для тела",
+      "skin": "Комбинированная",
+      "ingredients": [
+        "Aqua",
+        "Cyclomethicone",
+        "Helianthus Annuus Seed Oil",
+        "Glycine Soja Oil",
+        "Glycerin",
+        "Tocopherol",
+        "Propylene Glycol",
+        "Butylene Glycol",
+        "Calendula Officinalis Flower Extract",
+        "Citronellol",
+        "Limonene"
+      ],
+      "volume": [
+        "100ml",
+        "150ml"
+      ]
+    },
+    {
+      "name": "Paradise",
+      "image": "paradise.jpg",
+      "description": "Минеральная пудра обеспечивает идеальную матовость и гладкость кожи. Подходит для фиксации макияжа и создания безупречного внешнего вида.",
+      "price": 129,
+      "rating": 5,
+      "category": "Уход для лица",
+      "subcategory": "Минеральная пудра",
+      "skin": "Сухая",
+      "ingredients": [
+        "Aqua",
+        "Cyclomethicone",
+        "Talc",
+        "Titanium Dioxide",
+        "Silica",
+        "Zinc Oxide",
+        "Mica",
+        "Butylene Glycol",
+        "Glycerin",
+        "Tapioca Starch",
+        "Propylene Glycol",
+        "Tocopherol",
+        "Glycine Soja Oil",
+        "Dimethiconol"
+      ],
+      "volume": [
+        "10g",
+        "15g"
+      ]
+    },
+    {
+      "name": "Sun",
+      "image": "sun.jpg",
+      "description": "Бомбочка для ванны с приятным ароматом создаст атмосферу расслабления и уюта во время водных процедур. Помогает расслабиться и отдохнуть.",
+      "price": 99,
+      "rating": 10,
+      "category": "Уход для тела",
+      "subcategory": "Бомбочка для ванны",
+      "skin": "Жирная",
+      "ingredients": [
+        "Sodium Bicarbonate",
+        "Citric Acid",
+        "Sodium Chloride",
+        "Persea Gratissima Oil",
+        "Citrus Aurantium Dulcis Peel Oil",
+        "Limonene",
+        "Linalool",
+        "Citral",
+        "CI 19140",
+        "CI 15985"
+      ],
+      "volume": [
+        "50g",
+        "75g"
+      ]
+    },
+    {
+      "name": "Violet",
+      "image": "violet.jpg",
+      "description": "Увлажняющий крем идеально подходит для повседневного ухода за молодой кожей. Крем равномерно распределяется по поверхности благодаря легкой текстуре, обеспечивает глубокое увлажнение, регенерацию клеток.",
+      "price": 189,
+      "rating": 6,
+      "category": "Уход для лица",
+      "subcategory": "Крем для лица",
+      "skin": "Нормальная",
+      "ingredients": [
+        "Aqua",
+        "Cyclomethicone",
+        "Dicaprylyl Carbonate",
+        "Butylene Glycol",
+        "Glycerin",
+        "Tapioca Starch",
+        "Nelumbium Speciosum Flower Extract",
+        "Calendula Officinalis Flower Extract",
+        "Propylene Glycol",
+        "Tocopherol",
+        "Glycine Soja Oil",
+        "Dimethiconol",
+        "Citronellol",
+        "Limonene"
+      ],
+      "volume": [
+        "30ml",
+        "50ml"
+      ]
+    },
+    {
+      "name": "Clean",
+      "image": "clean.jpg",
+      "description": "Маска для лица помогает очистить кожу от загрязнений и придает ей свежесть и здоровый вид. Идеально для еженедельного ухода за кожей.",
+      "price": 119,
+      "rating": 7,
+      "category": "Уход для лица",
+      "subcategory": "Маска для лица",
+      "skin": "Комбинированная",
+      "ingredients": [
+        "Aqua",
+        "Kaolin",
+        "Glycerin",
+        "Cetearyl Alcohol",
+        "Calendula Officinalis Flower Extract",
+        "Tocopherol",
+        "Propylene Glycol",
+        "Butylene Glycol",
+        "Citronellol",
+        "Limonene"
+      ],
+      "volume": [
+        "50g",
+        "75g",
+        "100g"
+      ]
+    },
+    {
+      "name": "Coconat",
+      "image": "coconat.jpg",
+      "description": "Масло для тела питает и увлажняет кожу, придавая ей нежность и мягкость. Идеально после душа или ванны для ухода за сухой кожей.",
+      "price": 179,
+      "rating": 1,
+      "category": "Уход для тела",
+      "subcategory": "Масло для тела",
+      "skin": "Сухая",
+      "ingredients": [
+        "Aqua",
+        "Cocos Nucifera Oil",
+        "Glycine Soja Oil",
+        "Butyrospermum Parkii Butter",
+        "Glycerin",
+        "Tocopherol",
+        "Propylene Glycol",
+        "Butylene Glycol",
+        "Calendula Officinalis Flower Extract",
+        "Citronellol",
+        "Limonene"
+      ],
+      "volume": [
+        "100ml",
+        "150ml"
+      ]
+    },
+    {
+      "name": "Lavender",
+      "image": "lavender.jpg",
+      "description": "Мыло ручной работы с лавандовым ароматом помогает расслабиться и создать атмосферу спокойствия во время водных процедур. Деликатно очищает кожу.",
+      "price": 99,
+      "rating": 8,
+      "category": "Уход для тела",
+      "subcategory": "Мыло ручной работы",
+      "skin": "Сухая",
+      "ingredients": [
+        "Sodium Palmate",
+        "Sodium Cocoate",
+        "Aqua",
+        "Glycerin",
+        "Lavandula Angustifolia Oil",
+        "Linalool",
+        "CI 77891",
+        "CI 17200",
+        "CI 42090"
+      ],
+      "volume": [
+        "100g",
+        "150g"
+      ]
+    },
+    {
+      "name": "Lotos",
+      "image": "lotos.jpg",
+      "description": "Маска для лица помогает увлажнить и оживить уставшую кожу. Подходит для еженедельного ухода за лицом и создает ощущение свежести.",
+      "price": 139,
+      "rating": 9,
+      "category": "Уход для лица",
+      "subcategory": "Маска для лица",
+      "skin": "Нормальная",
+      "ingredients": [
+        "Aqua",
+        "Kaolin",
+        "Glycerin",
+        "Cetearyl Alcohol",
+        "Nelumbo Nucifera Flower Extract",
+        "Calendula Officinalis Flower Extract",
+        "Propylene Glycol",
+        "Tocopherol",
+        "Butylene Glycol",
+        "Citronellol",
+        "Limonene"
+      ],
+      "volume": [
+        "50g",
+        "75g"
+      ]
+    },
+    {
+      "name": "Earth",
+      "image": "earth.jpg",
+      "description": "Бомбочка для ванны с приятным ароматом создаст атмосферу расслабления и уюта во время водных процедур. Помогает расслабиться и отдохнуть.",
+      "price": 99,
+      "rating": 5,
+      "category": "Уход для тела",
+      "subcategory": "Бомбочка для ванны",
+      "skin": "Комбинированная",
+      "ingredients": [
+        "Sodium Bicarbonate",
+        "Citric Acid",
+        "Sodium Chloride",
+        "Persea Gratissima Oil",
+        "Citrus Aurantium Dulcis Peel Oil",
+        "Limonene",
+        "Linalool",
+        "Citral",
+        "CI 19140",
+        "CI 15985"
+      ],
+      "volume": [
+        "50g",
+        "75g"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-family: "MPLUS1p", "Lucida Sans Unicode", sans-serif;
+  font-size: $fs-m;
+  line-height: $lh-145;
+  font-weight: $fw-regular;
+  color: $color-accent;
+  background-color: $bg-color-accent;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: $desktop-width;
+  padding: 0 $mobile-padding-sides;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 $tablet-padding-sides;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 $desktop-padding-sides;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.mobile-not-view {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}

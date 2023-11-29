@@ -1,0 +1,36 @@
+//Base Styles
+@import "variables.scss";
+@import "reset.scss";
+@import "fonts.scss";
+@import "base.scss";
+
+//Slider Swiper
+@import "../../node_modules/swiper/swiper-vars.scss";
+@import "../../node_modules/swiper/swiper.scss";
+
+//Components
+@import "./components/button.scss";
+@import "./components/button-icon.scss";
+@import "./components/user-list.scss";
+@import "./components/socials.scss";
+@import "./components/navigation.scss";
+@import "./components/icon.scss";
+@import "./components/promo-type.scss";
+@import "./components/section-content.scss";
+@import "./components/bestseller-card.scss";
+@import "./components/spoilers.scss";
+@import "./components/checkbox.scss";
+
+//Sections Main
+@import "./sections/header.scss";
+@import "./sections/promo.scss";
+@import "./sections/bestsellers.scss";
+@import "./sections/new-collection.scss";
+@import "./sections/individual-approach.scss";
+@import "./sections/history.scss";
+@import "./sections/subscription.scss";
+@import "./sections/contacts.scss";
+@import "./sections/footer.scss";
+
+//Sections Catalog
+@import "./sections/catalog-filter.scss";

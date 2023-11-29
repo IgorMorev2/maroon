@@ -1,0 +1,59 @@
+.bestseller-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  min-height: min(92.813vw, 312px);
+  width: min(68.75vw, 230px);
+  text-align: center;
+  line-height: $lh-145;
+  word-break: break-all;
+  padding: 0 10px;
+
+  &__img {
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+  }
+
+  &__title {
+    font-family: "Raleway", sans-serif;
+    font-weight: $fw-medium;
+  }
+
+  &__subtitle {
+    text-transform: lowercase;
+    font-size: $fs-xs;
+    color: $color-secondary;
+    margin-bottom: 5px;
+  }
+
+  &__link {
+    font-size: $fs-xs;
+    margin-bottom: 14px;
+    border-bottom: 1px solid $color-accent;
+    border-radius: $outline-radius;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 25px;
+    }
+
+    @media (min-width: $mobile-width) {
+      margin-bottom: 20px;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+
+    &:focus-visible {
+      outline: $outline;
+      outline-offset: $outline-offset;
+    }
+  }
+}

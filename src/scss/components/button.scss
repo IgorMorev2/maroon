@@ -1,0 +1,32 @@
+.button {
+  display: inline-block;
+  min-width: min(41.25vw, 141px);
+  max-width: min(56.875vw, 200px);
+  min-height: 41px;
+  padding: 7px 27px 7px;
+  text-align: center;
+  border: 1px solid $color-secondary;
+  border-radius: 2px;
+  background-color: transparent;
+  font-size: min(4.375vw, $fs-m);
+  line-height: $lh-150;
+  font-weight: $fw-medium;
+  word-wrap: break-word;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &:focus-visible {
+    outline: $outline;
+    outline-offset: $outline-offset;
+  }
+
+  &--submit {
+    border-color: $color-accent;
+  }
+}

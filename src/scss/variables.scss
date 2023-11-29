@@ -1,0 +1,55 @@
+/* COLORS */
+$color-accent: #122947;
+$color-secondary: #9a9da0;
+$color-copyright: #959595;
+
+$border-color: #b3bac1;
+$border-color-header: #dbdce0;
+$border-color-copyright: #d1d1d1;
+$border-color-checkbox: #cdcdcd;
+
+$bg-color-accent: #f8f8f6;
+$bg-color-secondary: #f4f1ed;
+
+$shadow-color: rgba(214, 214, 214, 0.19);
+
+/* FOCUS */
+$outline: $color-accent solid 2px;
+$outline-radius: 2px;
+$outline-offset: 5px;
+
+/* FONTS SIZE */
+$fs-base: 1rem;
+
+$fs-6xl: 3.625rem; //58
+$fs-5xl: 3.375rem; //54
+$fs-4xl: 2.625rem; //42
+$fs-3xl: 2.25rem; //36
+$fs-xxl: 2rem; //32
+$fs-xl: 1.625rem; //26
+$fs-l: 1.125rem; //18
+$fs-m: $fs-base; //16
+$fs-s: 0.875rem; //14
+$fs-xs: 0.813rem; //13
+$fs-xxs: 0.75rem; //12
+
+/* FONTS HEIGHT */
+$lh-150: 150%;
+$lh-145: 145%;
+$lh-140: 140%;
+$lh-130: 130%;
+$lh-125: 125%;
+$lh-117: 117%;
+
+/* FONTS WEIGHT */
+$fw-regular: 400;
+$fw-medium: 500;
+
+/* MEDIA QUERIES */
+$desktop-width: 1366px;
+$tablet-width: 768px;
+$mobile-width: 320px;
+
+$desktop-padding-sides: 98px;
+$tablet-padding-sides: 45px;
+$mobile-padding-sides: 15px;

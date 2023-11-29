@@ -1,0 +1,191 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: min(5.938vw, 23px) clamp(30px, 6.51vw, 69px);
+
+  &--header {
+    .navigation__logo {
+      @media (max-width: $tablet-width) {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    .navigation__socials {
+      display: none;
+      margin-left: -10px;
+    }
+
+    .navigation__list {
+      justify-content: end;
+    }
+  }
+
+  &--footer {
+    flex-direction: column;
+    align-items: start;
+
+    @media (min-width: $tablet-width) {
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .navigation__list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+
+      @media (min-width: $tablet-width) {
+        display: flex;
+      }
+    }
+
+    .navigation__socials {
+      margin-left: -10px;
+    }
+  }
+
+  &--menu-open {
+    @media (max-width: $tablet-width) {
+    .navigation__menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      font-family: "Raleway", sans-serif;
+      background-color: $bg-color-accent;
+      width: 100%;
+      padding-top: min(10.5vw, 43px);
+      padding-bottom: min(14.064vw, 55px);
+      border-top: 1px solid $border-color-header;
+      box-shadow: 0px 4px 40px $shadow-color;
+      z-index: 2;
+    }
+
+    .navigation__list {
+      flex-direction: column;
+      font-size: min(8.75vw, $fs-xxl);
+      line-height: $lh-125;
+    }
+
+    .navigation__socials {
+        display: flex;
+    }
+  }
+  }
+
+  &--menu-close {
+    .navigation__menu {
+      @media (max-width: $tablet-width) {
+        display: none;
+      }
+    }
+  }
+
+  &__burger {
+    display: none;
+    width: 30px;
+    height: 30px;
+    margin-left: -4px;
+    border-radius: $outline-radius;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+
+    &:focus-visible {
+      outline: $outline;
+    }
+
+    @media (max-width: $tablet-width) {
+      display: block;
+    }
+  }
+
+  &__logo {
+    flex-shrink: 0;
+    width: min(26.563vw, 131px);
+    height: min(4.063vw, 21px);
+    border-radius: $outline-radius;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+
+    &:focus-visible {
+      outline: $outline;
+      outline-offset: $outline-offset;
+    }
+
+    .icon {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    gap: min(10.938vw, 45px);
+    width: 100%;
+
+    @media (min-width: $desktop-width) {
+      flex-direction: row;
+      padding: 0;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: start;
+    flex: 1 1 auto;
+    gap: min(5.938vw, 23px) clamp(23px, 3vw, 35px);
+    flex-wrap: wrap;
+    height: 100%;
+    font-size: min(4.375vw, 16px);
+  }
+
+  &__item {
+    min-height: 35px;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    border-radius: $outline-radius;
+    font-size: inherit;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+
+    &:focus-visible {
+      outline: $outline;
+      outline-offset: $outline-offset;
+    }
+  }
+
+  &__user-list {
+    flex-shrink: 0;
+    margin-right: -8px;
+  }
+
+  &__socials {
+    flex-shrink: 0;
+    margin-right: -8px;
+  }
+}
