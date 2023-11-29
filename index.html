@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css?_v=20231129155640">
+  <title>Maroon - Главная</title>
+</head>
+
+
+<body>
+  <header class="header wrapper">
+  <nav class="header__navigation navigation navigation--menu-close navigation--header">
+    <button class="navigation__burger button-icon button-icon--burger-open">
+      <span class="visually-hidden">Кнопка бургер</span>
+      <svg class="icon icon--burger-open">
+        <use href="./img/icons/icons.svg#burger-open"></use>
+      </svg>
+    </button>
+
+    <a class="navigation__logo" href="./index.html">
+      <span class="visually-hidden">Логотип интернет-магазина Maroon</span>
+      <svg class="icon">
+        <use  href="./img/icons/icons.svg#logo"></use>
+      </svg>
+    </a>
+
+    <div class="navigation__menu wrapper">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a href="./catalog.html" class="navigation__link">Каталог</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">О нас</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">Контакты</a>
+        </li>
+      </ul>
+
+      <ul class="navigation__socials socials">
+        <li class="socials__item">
+          <a href="#" class="socials__link socials__link--facebook">
+            <span class="visually-hidden">Фейсбук</span>
+            <svg class="icon">
+              <use href="./img/icons/icons.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a href="#" class="socials__link socials__link--instagram">
+            <span class="visually-hidden">Инстаграм</span>
+            <svg class="icon">
+              <use href="./img/icons/icons.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a href="#" class="socials__link socials__link--twitter">
+            <span class="visually-hidden">Твиттер</span>
+            <svg class="icon">
+              <use href="./img/icons/icons.svg#twitter"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <ul class="navigation__user-list user-list">
+      <li class="user-list__item">
+        <button class="button-icon button-icon--login">
+          <span class="visually-hidden">Личный кабинет</span>
+          <svg class="icon">
+            <use href="./img/icons/icons.svg#login"></use>
+          </svg>
+        </button>
+      </li>
+      <li class="user-list__item">
+        <button class="button-icon button-icon--cart">
+          <span class="visually-hidden">Корзина</span>
+          <svg class="icon">
+            <use href="./img/icons/icons.svg#cart"></use>
+          </svg>
+        </button>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+  <main>
+    <header class="promo">
+  <div class="promo__wrapper wrapper">
+
+    <div class="promo__content section-content section-content--main">
+      <h1 class="section-content__title">Maroon</h1>
+      <p class="section-content__text">Натуральная косметика<br>
+        для бережного ухода за кожей</p>
+      <a class="section-content__button button" href="./catalog.html">Подробнее</a>
+    </div>
+
+    <a href="#" class="promo-type promo-type--facial-care">
+      <div class="promo-type__content">
+        <p class="promo-type__title">Уход для лица</p>
+        <svg class="icon icon--arrow">
+          <use href="./img/icons/icons.svg#arrow"></use>
+        </svg>
+      </div>
+    </a>
+
+    <a href="#" class="promo-type promo-type--body-care">
+      <div class="promo-type__content">
+        <p class="promo-type__title">Уход для тела</p>
+        <svg class="icon icon--arrow">
+          <use href="./img/icons/icons.svg#arrow"></use>
+        </svg>
+      </div>
+    </a>
+  </div>
+</header>
+
+    <section class="bestsellers">
+  <div class="bestsellers__wrapper wrapper">
+    <!-- <div class="bestsellers__content">
+      <h2 class="bestsellers__title section-title">Бестселлеры</h2>
+      <p class="bestsellers__text section-text">Легендарные продукты, завоевавшие любовь наших клиентов</p>
+      <a href="#" class="bestsellers__button button" data-da=".bestsellers__slider">Смотреть все</a>
+    </div> -->
+
+    <div class="bestsellers__content section-content">
+      <h2 class="section-content__title">Бестселлеры</h2>
+      <p class="section-content__text">Легендарные продукты, завоевавшие любовь наших клиентов</p>
+      <a class="section-content__button button" href="./catalog.html" data-da=".bestsellers__slider">Смотреть все</a>
+    </div>
+
+    <div class="bestsellers__slider slider">
+        <ol class="slider__list swiper-wrapper">
+          <li class="bestseller-card swiper-slide">
+            <img class="bestseller-card__img" src="./img/catalog-data/high.jpg"
+              srcset="./img/catalog-data/high@2x.jpg 2x" alt="High - крем для лица">
+            <h3 class="bestseller-card__title">High</h3>
+            <span class="bestseller-card__subtitle">Крем для лица</span>
+            <a href="#" class="bestseller-card__link">Подробнее</a>
+          </li>
+          <li class="bestseller-card swiper-slide">
+            <img class="bestseller-card__img" src="./img/catalog-data/rest.jpg"
+              srcset="./img/catalog-data/rest@2x.jpg 2x" alt="Rest - минеральная пудра">
+            <h3 class="bestseller-card__title">Rest</h3>
+            <span class="bestseller-card__subtitle">Минеральная пудра</span>
+            <a href="#" class="bestseller-card__link">Подробнее</a>
+          </li>
+          <li class="bestseller-card swiper-slide">
+            <img class="bestseller-card__img" src="./img/catalog-data/rose.jpg"
+              srcset="./img/catalog-data/rose@2x.jpg 2x" alt="Rose - крем для лица">
+            <h3 class="bestseller-card__title">Rose</h3>
+            <span class="bestseller-card__subtitle">Крем для лица</span>
+            <a href="#" class="bestseller-card__link">Подробнее</a>
+          </li>
+          <li class="bestseller-card swiper-slide">
+            <img class="bestseller-card__img" src="./img/catalog-data/milk.jpg"
+              srcset="./img/catalog-data/milk@2x.jpg 2x" alt="Rose - крем для лица">
+            <h3 class="bestseller-card__title">Milk</h3>
+            <span class="bestseller-card__subtitle">Масло для тела</span>
+            <a href="#" class="bestseller-card__link">Подробнее</a>
+          </li>
+          <li class="bestseller-card swiper-slide">
+            <img class="bestseller-card__img" src="./img/catalog-data/high.jpg"
+              srcset="./img/catalog-data/high@2x.jpg 2x" alt="High - крем для лица">
+            <h3 class="bestseller-card__title">High</h3>
+            <span class="bestseller-card__subtitle">Крем для лица</span>
+            <a href="#" class="bestseller-card__link">Подробнее</a>
+          </li>
+          <li class="bestseller-card swiper-slide">
+            <img class="bestseller-card__img" src="./img/catalog-data/rest.jpg"
+              srcset="./img/catalog-data/rest@2x.jpg 2x" alt="Rest - минеральная пудра">
+            <h3 class="bestseller-card__title">Rest</h3>
+            <span class="bestseller-card__subtitle">Минеральная пудра</span>
+            <a href="#" class="bestseller-card__link">Подробнее</a>
+          </li>
+          <li class="bestseller-card swiper-slide">
+            <img class="bestseller-card__img" src="./img/catalog-data/rose.jpg"
+              srcset="./img/catalog-data/rose@2x.jpg 2x" alt="Rose - крем для лица">
+            <h3 class="bestseller-card__title">Rose</h3>
+            <span class="bestseller-card__subtitle">Крем для лица</span>
+            <a href="#" class="bestseller-card__link">Подробнее</a>
+          </li>
+          <li class="bestseller-card swiper-slide">
+            <img class="bestseller-card__img" src="./img/catalog-data/milk.jpg"
+              srcset="./img/catalog-data/milk@2x.jpg 2x" alt="Rose - крем для лица">
+            <h3 class="bestseller-card__title">Milk</h3>
+            <span class="bestseller-card__subtitle">Масло для тела</span>
+            <a href="#" class="bestseller-card__link">Подробнее</a>
+          </li>
+        </ol>
+
+        <div class="slider__buttons">
+          <button class="slider__button slider__button--prev button-icon button-icon--arrow">
+            <span class="visually-hidden">Предыдущий слайд</span>
+            <svg class="icon icon--arrow">
+              <use href="./img/icons/icons.svg#arrow"></use>
+            </svg>
+          </button>
+
+          <button class="slider__button slider__button--next button-icon button-icon--arrow">
+            <span class="visually-hidden">Следующий слайд</span>
+            <svg class="icon icon--arrow">
+              <use href="./img/icons/icons.svg#arrow"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+  </div>
+</section>
+
+    <section class="new-collection">
+  <div class="new-collection__wrapper wrapper">
+    <div class="new-collection__content section-content">
+      <h2 class="visually-hidden">Промо новой коллекции</h2>
+      <p class="section-content__title">Встречайте весну вместе с нами</p>
+      <p class="section-content__text">Попробуйте новую коллекцию ухаживающих средств для лица с SPF защитой
+      </p>
+      <a class="section-content__button button" href="./catalog.html">Подробнее</a>
+    </div>
+  </div>
+</section>
+
+    <section class="individual-approach">
+  <div class="individual-approach__wrapper wrapper">
+    <div class="individual-approach__container">
+      <div class="individual-approach__content section-content">
+        <h2 class="section-content__title">Индивидуальный уход</h2>
+        <p class="section-content__text mobile-not-view">Не всегда очевидно, какие элементы и минералы необходимы коже, а многочисленные
+          эксперименты с разными средствами только ухудшают ее качество.</p>
+        <p class="section-content__text">Заполните анкету, и мы подберем уход, подходящий именно вам, учитывая ваш образ
+          жизни, место жительства и другие факторы.</p>
+        <button class="section-content__button button">Заполнить анкету</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="history">
+  <div class="history__wrapper wrapper">
+    <h2 class="visually-hidden">История компании</h2>
+    <blockquote class="history__quote">
+      <p>
+        “Мы стремимся сделать уход за кожей доступным и приятным ритуалом для всех,
+        кто хочет заботиться о себе и своем теле”
+      </p>
+    </blockquote>
+    <button class="history__button button">Наша история</button>
+  </div>
+</section>
+
+    <footer>
+  <section class="subscription">
+  <div class="subscription__wrapper wrapper">
+    <h2 class="visually-hidden">Подписка на аккаунт</h2>
+    <div class="subscription__content section-content">
+      <p class="section-content__title">Присоединяйтесь к нам</p>
+      <p class="section-content__text">Подпишитесь на наш аккаунт <a class="section-content__link"
+          href="#">@marooncare</a> и узнавайте о новиках и акциях первыми</p>
+      <button class="section-content__button button">Подписаться</button>
+    </div>
+
+    <ul class="subscription__photos-list photos-list">
+      <li class="photos-list__photo">
+        <picture><source srcset="./img/subscription/photos-01.webp, ./img/subscription/photos-01@2x.webp" type="image/webp"><img src="./img/subscription/photos-01.jpg" srcset="./img/subscription/photos-01@2x.jpg" alt="Фото с аккаунта"></picture>
+      </li>
+      <li class="photos-list__photo">
+        <picture><source srcset="./img/subscription/photos-02.webp, ./img/subscription/photos-02@2x.webp" type="image/webp"><img src="./img/subscription/photos-02.jpg" srcset="./img/subscription/photos-02@2x.jpg" alt="Фото с аккаунта"></picture>
+      </li>
+      <li class="photos-list__photo">
+        <picture><source srcset="./img/subscription/photos-03.webp, ./img/subscription/photos-03@2x.webp" type="image/webp"><img src="./img/subscription/photos-03.jpg" srcset="./img/subscription/photos-03@2x.jpg" alt="Фото с аккаунта"></picture>
+      </li>
+      <li class="photos-list__photo">
+        <picture><source srcset="./img/subscription/photos-04.webp, ./img/subscription/photos-04@2x.webp" type="image/webp"><img src="./img/subscription/photos-04.jpg" srcset="./img/subscription/photos-04@2x.jpg" alt="Фото с аккаунта"></picture>
+      </li>
+      <li class="photos-list__photo">
+        <picture><source srcset="./img/subscription/photos-05.webp, ./img/subscription/photos-05@2x.webp" type="image/webp"><img src="./img/subscription/photos-05.jpg" srcset="./img/subscription/photos-05@2x.jpg" alt="Фото с аккаунта"></picture>
+      </li>
+      <li class="photos-list__photo">
+        <picture><source srcset="./img/subscription/photos-06.webp, ./img/subscription/photos-06@2x.webp" type="image/webp"><img src="./img/subscription/photos-06.jpg" srcset="./img/subscription/photos-06@2x.jpg" alt="Фото с аккаунта"></picture>
+      </li>
+    </ul>
+  </div>
+</section>
+
+  <section class="contacts">
+  <div class="contacts__wrapper wrapper">
+    <div class="contacts__container">
+      <h2 class="contacts__title">Контакты</h2>
+
+      <address class="contacts__content">
+        <dl class="contacts__list contacts-list">
+          <dt class="contacts-list__title">Адрес</dt>
+          <dd class="contacts-list__item">Санкт-Петербург,<br> ул. Большая Конюшенная, 19</dd>
+
+          <dt class="contacts-list__title">Телефон</dt>
+          <dd class="contacts-list__item">
+            <a class="contacts-list__link" href="tel:+79238889060">+7 (923) 888-90-60</a>
+          </dd>
+
+          <dt class="contacts-list__title">E-mail</dt>
+          <dd class="contacts-list__item">
+            <a class="contacts-list__link" href="mailto:info@maroon.ru">info@maroon.ru</a>
+          </dd>
+        </dl>
+
+        <ul class="contacts__socials socials">
+          <li class="socials__item">
+            <a href="#" class="socials__link socials__link--facebook">
+              <span class="visually-hidden">Фейсбук</span>
+              <svg class="icon">
+                <use href="./img/icons/icons.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link socials__link--instagram">
+              <span class="visually-hidden">Инстаграм</span>
+              <svg class="icon">
+                <use href="./img/icons/icons.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link socials__link--twitter">
+              <span class="visually-hidden">Твиттер</span>
+              <svg class="icon">
+                <use href="./img/icons/icons.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </address>
+
+      <div class="contacts__map">
+      </div>
+    </div>
+  </div>
+</section>
+
+</footer>
+
+  </main>
+  <footer class="footer">
+  <div class="footer__main">
+    <div class="footer__main-wrapper wrapper">
+      <nav class="footer__navigation navigation navigation--footer">
+
+        <a class="navigation__logo" href="./index.html">
+          <span class="visually-hidden">Логотип интернет-магазина Maroon</span>
+          <svg class="icon">
+            <use href="./img/icons/icons.svg#logo"></use>
+          </svg>
+        </a>
+
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link" href="./catalog.html">Каталог</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">О нас</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Магазины</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Контакты</a>
+          </li>
+        </ul>
+
+        <ul class="navigation__socials socials">
+          <li class="socials__item">
+            <a href="#" class="socials__link socials__link--facebook">
+              <span class="visually-hidden">Фейсбук</span>
+              <svg class="icon">
+                <use href="./img/icons/icons.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link socials__link--instagram">
+              <span class="visually-hidden">Инстаграм</span>
+              <svg class="icon">
+                <use href="./img/icons/icons.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link socials__link--twitter">
+              <span class="visually-hidden">Твиттер</span>
+              <svg class="icon">
+                <use href="./img/icons/icons.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="footer__copyright">
+    <div class="footer__copyright-wrapper wrapper">
+      <small class="footer__copyright-text">
+        Maroon
+        <span class="footer__copyright-icon">
+          <svg class="icon icon--copyright">
+            <use href="../img/icons/icons.svg#copyright"></use>
+          </svg>
+        </span>
+        2020 Все права защищены
+      </small>
+
+      <a href="#" class="footer__privacy-policy">Политика конфиденциальности</a>
+    </div>
+  </div>
+</footer>
+
+  <script src="https://api-maps.yandex.ru/v3/?apikey=eeb4433f-7684-4e03-a476-2f48e0f96cb5&lang=ru_RU&_v=20231129155640"></script>
+  <script src="js/app.min.js?_v=20231129155640" type="module"></script>
+  <template id="bestseller-card">
+  <li class="besteller-card">
+    <img class="bestseller-card__img" src="" srcset="" alt="">
+    <h3 class="bestseller-card__title"></h3>
+    <span class="bestseller-card__subtitle"></span>
+    <a href="#" class="bestseller-card__link">Подробнее</a>
+  </li>
+</template>
+
+<template id="catalog-card">
+  <a class="catalog-card">
+    <img class="catalog-card__img" src="" srcset="" alt="">
+    <h3 class="catalog-card__title"></h3>
+    <span class="catalog-card__price"></span>
+    <span class="catalog-card__subtitle"></span>
+    <span class="catalog-card__volume"></span>
+  </a>
+</template>
+
+</body>
+
+</html>

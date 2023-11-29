@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css?_v=20231129155640">
+  <title>Maroon - Каталог</title>
+</head>
+
+
+<body>
+  <header class="header wrapper">
+  <nav class="header__navigation navigation navigation--menu-close navigation--header">
+    <button class="navigation__burger button-icon button-icon--burger-open">
+      <span class="visually-hidden">Кнопка бургер</span>
+      <svg class="icon icon--burger-open">
+        <use href="./img/icons/icons.svg#burger-open"></use>
+      </svg>
+    </button>
+
+    <a class="navigation__logo" href="./index.html">
+      <span class="visually-hidden">Логотип интернет-магазина Maroon</span>
+      <svg class="icon">
+        <use  href="./img/icons/icons.svg#logo"></use>
+      </svg>
+    </a>
+
+    <div class="navigation__menu wrapper">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a href="./catalog.html" class="navigation__link">Каталог</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">О нас</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">Контакты</a>
+        </li>
+      </ul>
+
+      <ul class="navigation__socials socials">
+        <li class="socials__item">
+          <a href="#" class="socials__link socials__link--facebook">
+            <span class="visually-hidden">Фейсбук</span>
+            <svg class="icon">
+              <use href="./img/icons/icons.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a href="#" class="socials__link socials__link--instagram">
+            <span class="visually-hidden">Инстаграм</span>
+            <svg class="icon">
+              <use href="./img/icons/icons.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a href="#" class="socials__link socials__link--twitter">
+            <span class="visually-hidden">Твиттер</span>
+            <svg class="icon">
+              <use href="./img/icons/icons.svg#twitter"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <ul class="navigation__user-list user-list">
+      <li class="user-list__item">
+        <button class="button-icon button-icon--login">
+          <span class="visually-hidden">Личный кабинет</span>
+          <svg class="icon">
+            <use href="./img/icons/icons.svg#login"></use>
+          </svg>
+        </button>
+      </li>
+      <li class="user-list__item">
+        <button class="button-icon button-icon--cart">
+          <span class="visually-hidden">Корзина</span>
+          <svg class="icon">
+            <use href="./img/icons/icons.svg#cart"></use>
+          </svg>
+        </button>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+  <main>
+    <header class="catalog-filter">
+  <div class="catalog-filter__wrapper wrapper">
+    <h1 class="catalog-filter__title">Каталог</h1>
+
+    <button class="catalog-filter__button-open-popup button">Фильтр</button>
+    <button class="catalog-filter__button-close-popup button-icon button-icon--close-button">
+      <span class="visually-hidden">Кнопка закрытия фильтра</span>
+      <svg class="icon icon--close-button">
+        <use href="./img/icons/icons.svg#close-button"></use>
+      </svg>
+    </button>
+
+    <form class="catalog-filter__filter wrapper" action="" method="">
+      <h2 class="visually-hidden">Фильтр каталога</h2>
+
+      <div class="catalog-filter__spoilers spoilers" data-spoilers="320, max">
+        <fieldset class="spoilers__item">
+          <button class="spoilers__title" data-spoiler>Уход для лица</button>
+          <div class="spoilers__content">
+            <div class="spoilers__content-container">
+              <label class="checkbox">
+                <input class="checkbox__input visually-hidden" type="checkbox" name="facial-care">
+                <span class="checkbox__control"></span>
+                Крема
+              </label>
+              <label class="checkbox">
+                <input class="checkbox__input visually-hidden" type="checkbox" name="facial-care">
+                <span class="checkbox__control"></span>
+                Сыворотки
+              </label>
+              <label class="checkbox">
+                <input class="checkbox__input visually-hidden" type="checkbox" name="facial-care">
+                <span class="checkbox__control"></span>
+                Маски
+              </label>
+              <label class="checkbox">
+                <input class="checkbox__input visually-hidden" type="checkbox" name="facial-care">
+                <span class="checkbox__control"></span>
+                Пенки
+              </label>
+              <label class="checkbox">
+                <input class="checkbox__input visually-hidden" type="checkbox" name="facial-care">
+                <span class="checkbox__control"></span>
+                Тоники
+              </label>
+              <label class="checkbox">
+                <input class="checkbox__input visually-hidden" type="checkbox" name="facial-care">
+                <span class="checkbox__control"></span>
+                Пудры
+              </label>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="spoilers__item">
+          <button class="spoilers__title" data-spoiler>Уход для тела</button>
+          <div class="spoilers__content">
+            <div class="spoilers__content-container">
+              <label class="checkbox">
+                <input class="checkbox__input visually-hidden" type="checkbox" name="body-care">
+                <span class="checkbox__control"></span>
+                Крема
+              </label>
+              <label class="checkbox">
+                <input class="checkbox__input visually-hidden" type="checkbox" name="body-care">
+                <span class="checkbox__control"></span>
+                Масла
+              </label>
+              <label class="checkbox">
+                <input class="checkbox__input visually-hidden" type="checkbox" name="body-care">
+                <span class="checkbox__control"></span>
+                Скрабы
+              </label>
+              <label class="checkbox">
+                <input class="checkbox__input visually-hidden" type="checkbox" name="body-care">
+                <span class="checkbox__control"></span>
+                Мыло
+              </label>
+              <label class="checkbox">
+                <input class="checkbox__input visually-hidden" type="checkbox" name="body-care">
+                <span class="checkbox__control"></span>
+                Бомбочки для ванны
+              </label>
+              <label class="checkbox">
+                <input class="checkbox__input visually-hidden" type="checkbox" name="body-care">
+                <span class="checkbox__control"></span>
+                Соль для ванны
+              </label>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="spoilers__item">
+          <button class="spoilers__title spoilers__title--without-border" data-spoiler>Тип кожи</button>
+          <div class="spoilers__content">
+            <div class="spoilers__content-container">
+              <label class="checkbox">
+                <input class="checkbox__input visually-hidden" type="checkbox" name="skin-type">
+                <span class="checkbox__control"></span>
+                Нормальная
+              </label>
+              <label class="checkbox">
+                <input class="checkbox__input visually-hidden" type="checkbox" name="skin-type">
+                <span class="checkbox__control"></span>
+                Сухая
+              </label>
+              <label class="checkbox">
+                <input class="checkbox__input visually-hidden" type="checkbox" name="skin-type">
+                <span class="checkbox__control"></span>
+                Жирная
+              </label>
+              <label class="checkbox">
+                <input class="checkbox__input visually-hidden" type="checkbox" name="skin-type">
+                <span class="checkbox__control"></span>
+                Комбинированная
+              </label>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+      <div class="catalog-filter__buttons">
+        <button class="catalog-filter__submit-button button button--submit" type="submit">Применить</button>
+        <button class="catalog-filter__reset-button button" type="reset">Сбросить</button>
+      </div>
+    </form>
+  </div>
+</header>
+
+    <footer>
+  <section class="subscription">
+  <div class="subscription__wrapper wrapper">
+    <h2 class="visually-hidden">Подписка на аккаунт</h2>
+    <div class="subscription__content section-content">
+      <p class="section-content__title">Присоединяйтесь к нам</p>
+      <p class="section-content__text">Подпишитесь на наш аккаунт <a class="section-content__link"
+          href="#">@marooncare</a> и узнавайте о новиках и акциях первыми</p>
+      <button class="section-content__button button">Подписаться</button>
+    </div>
+
+    <ul class="subscription__photos-list photos-list">
+      <li class="photos-list__photo">
+        <picture><source srcset="./img/subscription/photos-01.webp, ./img/subscription/photos-01@2x.webp" type="image/webp"><img src="./img/subscription/photos-01.jpg" srcset="./img/subscription/photos-01@2x.jpg" alt="Фото с аккаунта"></picture>
+      </li>
+      <li class="photos-list__photo">
+        <picture><source srcset="./img/subscription/photos-02.webp, ./img/subscription/photos-02@2x.webp" type="image/webp"><img src="./img/subscription/photos-02.jpg" srcset="./img/subscription/photos-02@2x.jpg" alt="Фото с аккаунта"></picture>
+      </li>
+      <li class="photos-list__photo">
+        <picture><source srcset="./img/subscription/photos-03.webp, ./img/subscription/photos-03@2x.webp" type="image/webp"><img src="./img/subscription/photos-03.jpg" srcset="./img/subscription/photos-03@2x.jpg" alt="Фото с аккаунта"></picture>
+      </li>
+      <li class="photos-list__photo">
+        <picture><source srcset="./img/subscription/photos-04.webp, ./img/subscription/photos-04@2x.webp" type="image/webp"><img src="./img/subscription/photos-04.jpg" srcset="./img/subscription/photos-04@2x.jpg" alt="Фото с аккаунта"></picture>
+      </li>
+      <li class="photos-list__photo">
+        <picture><source srcset="./img/subscription/photos-05.webp, ./img/subscription/photos-05@2x.webp" type="image/webp"><img src="./img/subscription/photos-05.jpg" srcset="./img/subscription/photos-05@2x.jpg" alt="Фото с аккаунта"></picture>
+      </li>
+      <li class="photos-list__photo">
+        <picture><source srcset="./img/subscription/photos-06.webp, ./img/subscription/photos-06@2x.webp" type="image/webp"><img src="./img/subscription/photos-06.jpg" srcset="./img/subscription/photos-06@2x.jpg" alt="Фото с аккаунта"></picture>
+      </li>
+    </ul>
+  </div>
+</section>
+
+  <section class="contacts">
+  <div class="contacts__wrapper wrapper">
+    <div class="contacts__container">
+      <h2 class="contacts__title">Контакты</h2>
+
+      <address class="contacts__content">
+        <dl class="contacts__list contacts-list">
+          <dt class="contacts-list__title">Адрес</dt>
+          <dd class="contacts-list__item">Санкт-Петербург,<br> ул. Большая Конюшенная, 19</dd>
+
+          <dt class="contacts-list__title">Телефон</dt>
+          <dd class="contacts-list__item">
+            <a class="contacts-list__link" href="tel:+79238889060">+7 (923) 888-90-60</a>
+          </dd>
+
+          <dt class="contacts-list__title">E-mail</dt>
+          <dd class="contacts-list__item">
+            <a class="contacts-list__link" href="mailto:info@maroon.ru">info@maroon.ru</a>
+          </dd>
+        </dl>
+
+        <ul class="contacts__socials socials">
+          <li class="socials__item">
+            <a href="#" class="socials__link socials__link--facebook">
+              <span class="visually-hidden">Фейсбук</span>
+              <svg class="icon">
+                <use href="./img/icons/icons.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link socials__link--instagram">
+              <span class="visually-hidden">Инстаграм</span>
+              <svg class="icon">
+                <use href="./img/icons/icons.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link socials__link--twitter">
+              <span class="visually-hidden">Твиттер</span>
+              <svg class="icon">
+                <use href="./img/icons/icons.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </address>
+
+      <div class="contacts__map">
+      </div>
+    </div>
+  </div>
+</section>
+
+</footer>
+
+  </main>
+  <footer class="footer">
+  <div class="footer__main">
+    <div class="footer__main-wrapper wrapper">
+      <nav class="footer__navigation navigation navigation--footer">
+
+        <a class="navigation__logo" href="./index.html">
+          <span class="visually-hidden">Логотип интернет-магазина Maroon</span>
+          <svg class="icon">
+            <use href="./img/icons/icons.svg#logo"></use>
+          </svg>
+        </a>
+
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link" href="./catalog.html">Каталог</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">О нас</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Магазины</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Контакты</a>
+          </li>
+        </ul>
+
+        <ul class="navigation__socials socials">
+          <li class="socials__item">
+            <a href="#" class="socials__link socials__link--facebook">
+              <span class="visually-hidden">Фейсбук</span>
+              <svg class="icon">
+                <use href="./img/icons/icons.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link socials__link--instagram">
+              <span class="visually-hidden">Инстаграм</span>
+              <svg class="icon">
+                <use href="./img/icons/icons.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link socials__link--twitter">
+              <span class="visually-hidden">Твиттер</span>
+              <svg class="icon">
+                <use href="./img/icons/icons.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="footer__copyright">
+    <div class="footer__copyright-wrapper wrapper">
+      <small class="footer__copyright-text">
+        Maroon
+        <span class="footer__copyright-icon">
+          <svg class="icon icon--copyright">
+            <use href="../img/icons/icons.svg#copyright"></use>
+          </svg>
+        </span>
+        2020 Все права защищены
+      </small>
+
+      <a href="#" class="footer__privacy-policy">Политика конфиденциальности</a>
+    </div>
+  </div>
+</footer>
+
+  <script src="https://api-maps.yandex.ru/v3/?apikey=eeb4433f-7684-4e03-a476-2f48e0f96cb5&lang=ru_RU&_v=20231129155640"></script>
+  <script src="js/app.min.js?_v=20231129155640" type="module"></script>
+  <template id="bestseller-card">
+  <li class="besteller-card">
+    <img class="bestseller-card__img" src="" srcset="" alt="">
+    <h3 class="bestseller-card__title"></h3>
+    <span class="bestseller-card__subtitle"></span>
+    <a href="#" class="bestseller-card__link">Подробнее</a>
+  </li>
+</template>
+
+<template id="catalog-card">
+  <a class="catalog-card">
+    <img class="catalog-card__img" src="" srcset="" alt="">
+    <h3 class="catalog-card__title"></h3>
+    <span class="catalog-card__price"></span>
+    <span class="catalog-card__subtitle"></span>
+    <span class="catalog-card__volume"></span>
+  </a>
+</template>
+
+</body>
+
+</html>
