@@ -10,16 +10,7 @@
     padding-right: 20px;
     width: 100%;
     text-align: start;
-    border-bottom: 1px solid $border-color-header;
     cursor: auto;
-
-    &--without-border {
-      border-bottom: none;
-    }
-  }
-
-  &__content {
-    border-top: 1px solid $border-color-header;
   }
 
   &__content-container {
@@ -33,6 +24,11 @@
     .spoilers__title {
       cursor: pointer;
       border-radius: $outline-radius;
+      border-bottom: 1px solid $border-color-header;
+
+      &--without-border {
+        border-bottom: none;
+      }
 
       &::before,
       &::after {
@@ -70,7 +66,9 @@
       }
     }
 
-    .spoilers__content {}
+    .spoilers__content {
+      border-top: 1px solid $border-color-header;
+    }
   }
 
 }

@@ -37,12 +37,18 @@
 
   &__spoilers {
     margin-bottom: min(9.375vw, 50px);
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      justify-content: center;
+      column-gap: min(7.813vw, 80px);
+    }
   }
 
   &__buttons {
     display: flex;
-    justify-content: space-between;
-    gap: 20px;
+    justify-content: center;
+    gap: 24px;
   }
 
   &__submit-button {}

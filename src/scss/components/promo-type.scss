@@ -15,7 +15,7 @@
     font-size: min(3.75vw, $fs-m);
     font-weight: $fw-medium;
     line-height: $lh-140;
-    word-break: break-all;
+    overflow-wrap: break-word;
   }
 
   .icon {
