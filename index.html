@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.min.css?_v=20231130161727">
+  <link rel="stylesheet" href="css/style.min.css?_v=20231201224909">
   <title>Maroon - Главная</title>
 </head>
 
@@ -120,11 +120,6 @@
 
     <section class="bestsellers">
   <div class="bestsellers__wrapper wrapper">
-    <!-- <div class="bestsellers__content">
-      <h2 class="bestsellers__title section-title">Бестселлеры</h2>
-      <p class="bestsellers__text section-text">Легендарные продукты, завоевавшие любовь наших клиентов</p>
-      <a href="#" class="bestsellers__button button" data-da=".bestsellers__slider">Смотреть все</a>
-    </div> -->
 
     <div class="bestsellers__content section-content">
       <h2 class="section-content__title">Бестселлеры</h2>
@@ -132,82 +127,98 @@
       <a class="section-content__button button" href="./catalog.html" data-da=".bestsellers__slider">Смотреть все</a>
     </div>
 
-    <div class="bestsellers__slider slider">
-        <ol class="slider__list swiper-wrapper">
-          <li class="bestseller-card swiper-slide">
+    <div class="bestsellers__slider bestseller-slider">
+      <ol class="bestseller-slider__list swiper-wrapper">
+        <li class="bestseller-slider__item swiper-slide">
+          <div class="bestseller-card">
             <img class="bestseller-card__img" src="./img/catalog-data/high.jpg"
               srcset="./img/catalog-data/high@2x.jpg 2x" alt="High - крем для лица">
             <h3 class="bestseller-card__title">High</h3>
             <span class="bestseller-card__subtitle">Крем для лица</span>
             <a href="#" class="bestseller-card__link">Подробнее</a>
-          </li>
-          <li class="bestseller-card swiper-slide">
+          </div>
+        </li>
+        <li class="bestseller-slider__item swiper-slide">
+          <div class="bestseller-card">
             <img class="bestseller-card__img" src="./img/catalog-data/rest.jpg"
               srcset="./img/catalog-data/rest@2x.jpg 2x" alt="Rest - минеральная пудра">
             <h3 class="bestseller-card__title">Rest</h3>
             <span class="bestseller-card__subtitle">Минеральная пудра</span>
             <a href="#" class="bestseller-card__link">Подробнее</a>
-          </li>
-          <li class="bestseller-card swiper-slide">
+          </div>
+        </li>
+        <li class="bestseller-slider__item swiper-slide">
+          <div class="bestseller-card">
             <img class="bestseller-card__img" src="./img/catalog-data/rose.jpg"
               srcset="./img/catalog-data/rose@2x.jpg 2x" alt="Rose - крем для лица">
             <h3 class="bestseller-card__title">Rose</h3>
             <span class="bestseller-card__subtitle">Крем для лица</span>
             <a href="#" class="bestseller-card__link">Подробнее</a>
-          </li>
-          <li class="bestseller-card swiper-slide">
+          </div>
+        </li>
+        <li class="bestseller-slider__item swiper-slide">
+          <div class="bestseller-card">
             <img class="bestseller-card__img" src="./img/catalog-data/milk.jpg"
               srcset="./img/catalog-data/milk@2x.jpg 2x" alt="Rose - крем для лица">
             <h3 class="bestseller-card__title">Milk</h3>
             <span class="bestseller-card__subtitle">Масло для тела</span>
             <a href="#" class="bestseller-card__link">Подробнее</a>
-          </li>
-          <li class="bestseller-card swiper-slide">
+          </div>
+        </li>
+        <li class="bestseller-slider__item swiper-slide">
+          <div class="bestseller-card">
             <img class="bestseller-card__img" src="./img/catalog-data/high.jpg"
               srcset="./img/catalog-data/high@2x.jpg 2x" alt="High - крем для лица">
             <h3 class="bestseller-card__title">High</h3>
             <span class="bestseller-card__subtitle">Крем для лица</span>
             <a href="#" class="bestseller-card__link">Подробнее</a>
-          </li>
-          <li class="bestseller-card swiper-slide">
+          </div>
+        </li>
+        <li class="bestseller-slider__item swiper-slide">
+          <div class="bestseller-card">
             <img class="bestseller-card__img" src="./img/catalog-data/rest.jpg"
               srcset="./img/catalog-data/rest@2x.jpg 2x" alt="Rest - минеральная пудра">
             <h3 class="bestseller-card__title">Rest</h3>
             <span class="bestseller-card__subtitle">Минеральная пудра</span>
             <a href="#" class="bestseller-card__link">Подробнее</a>
-          </li>
-          <li class="bestseller-card swiper-slide">
+          </div>
+        </li>
+        <li class="bestseller-slider__item swiper-slide">
+          <div class="bestseller-card">
             <img class="bestseller-card__img" src="./img/catalog-data/rose.jpg"
               srcset="./img/catalog-data/rose@2x.jpg 2x" alt="Rose - крем для лица">
             <h3 class="bestseller-card__title">Rose</h3>
             <span class="bestseller-card__subtitle">Крем для лица</span>
             <a href="#" class="bestseller-card__link">Подробнее</a>
-          </li>
-          <li class="bestseller-card swiper-slide">
+          </div>
+        </li>
+        <li class="bestseller-slider__item swiper-slide">
+          <div class="bestseller-card">
             <img class="bestseller-card__img" src="./img/catalog-data/milk.jpg"
               srcset="./img/catalog-data/milk@2x.jpg 2x" alt="Rose - крем для лица">
             <h3 class="bestseller-card__title">Milk</h3>
             <span class="bestseller-card__subtitle">Масло для тела</span>
             <a href="#" class="bestseller-card__link">Подробнее</a>
-          </li>
-        </ol>
+          </div>
+        </li>
+      </ol>
 
-        <div class="slider__buttons">
-          <button class="slider__button slider__button--prev button-icon button-icon--arrow">
-            <span class="visually-hidden">Предыдущий слайд</span>
-            <svg class="icon icon--arrow">
-              <use href="./img/icons/icons.svg#arrow"></use>
-            </svg>
-          </button>
+      <div class="bestseller-slider__buttons">
+        <button class="bestseller-slider__button bestseller-slider__button--prev button-icon button-icon--arrow">
+          <span class="visually-hidden">Предыдущий слайд</span>
+          <svg class="icon icon--arrow">
+            <use href="./img/icons/icons.svg#arrow"></use>
+          </svg>
+        </button>
 
-          <button class="slider__button slider__button--next button-icon button-icon--arrow">
-            <span class="visually-hidden">Следующий слайд</span>
-            <svg class="icon icon--arrow">
-              <use href="./img/icons/icons.svg#arrow"></use>
-            </svg>
-          </button>
-        </div>
+        <button class="bestseller-slider__button bestseller-slider__button--next button-icon button-icon--arrow">
+          <span class="visually-hidden">Следующий слайд</span>
+          <svg class="icon icon--arrow">
+            <use href="./img/icons/icons.svg#arrow"></use>
+          </svg>
+        </button>
       </div>
+    </div>
   </div>
 </section>
 
@@ -416,15 +427,15 @@
   </div>
 </footer>
 
-  <script src="https://api-maps.yandex.ru/v3/?apikey=eeb4433f-7684-4e03-a476-2f48e0f96cb5&lang=ru_RU&_v=20231130161727"></script>
-  <script src="js/app.min.js?_v=20231130161727" type="module"></script>
+  <script src="https://api-maps.yandex.ru/v3/?apikey=eeb4433f-7684-4e03-a476-2f48e0f96cb5&lang=ru_RU&_v=20231201224909"></script>
+  <script src="js/app.min.js?_v=20231201224909" type="module"></script>
   <template id="bestseller-card">
-  <li class="besteller-card">
+  <div class="besteller-card">
     <img class="bestseller-card__img" src="" srcset="" alt="">
     <h3 class="bestseller-card__title"></h3>
     <span class="bestseller-card__subtitle"></span>
     <a href="#" class="bestseller-card__link">Подробнее</a>
-  </li>
+  </div>
 </template>
 
 <template id="catalog-card">

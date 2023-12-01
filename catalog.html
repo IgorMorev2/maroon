@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.min.css?_v=20231130161727">
+  <link rel="stylesheet" href="css/style.min.css?_v=20231201224909">
   <title>Maroon - Каталог</title>
 </head>
 
@@ -215,7 +215,35 @@
   </div>
 </header>
 
-    
+    <section class="products-list">
+  <div class="products-list__wrapper wrapper">
+    <h2 class="visually-hidden">Список товаров</h2>
+
+    <div class="products-list__slider products-slider">
+      <ul class="products-slider__list swiper-slide">
+        <li class="products-slider__item swiper-slide">
+          <a class="catalog-card">
+            <img class="catalog-card__img" src="./img/catalog-data/high.jpg" srcset="./img/catalog-data/high@2x.jpg"
+              alt="High">
+            <h3 class="catalog-card__title">High</h3>
+            <span class="catalog-card__price">990</span>
+            <span class="catalog-card__subtitle">Крем для лица</span>
+            <span class="catalog-card__volume">50ml</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- <a class="catalog-card">
+  <img class="catalog-card__img" src="" srcset="" alt="">
+  <h3 class="catalog-card__title"></h3>
+  <span class="catalog-card__price"></span>
+  <span class="catalog-card__subtitle"></span>
+  <span class="catalog-card__volume"></span>
+</a> -->
+
     <footer>
   <section class="subscription">
   <div class="subscription__wrapper wrapper">
@@ -381,15 +409,15 @@
   </div>
 </footer>
 
-  <script src="https://api-maps.yandex.ru/v3/?apikey=eeb4433f-7684-4e03-a476-2f48e0f96cb5&lang=ru_RU&_v=20231130161727"></script>
-  <script src="js/app.min.js?_v=20231130161727" type="module"></script>
+  <script src="https://api-maps.yandex.ru/v3/?apikey=eeb4433f-7684-4e03-a476-2f48e0f96cb5&lang=ru_RU&_v=20231201224909"></script>
+  <script src="js/app.min.js?_v=20231201224909" type="module"></script>
   <template id="bestseller-card">
-  <li class="besteller-card">
+  <div class="besteller-card">
     <img class="bestseller-card__img" src="" srcset="" alt="">
     <h3 class="bestseller-card__title"></h3>
     <span class="bestseller-card__subtitle"></span>
     <a href="#" class="bestseller-card__link">Подробнее</a>
-  </li>
+  </div>
 </template>
 
 <template id="catalog-card">
