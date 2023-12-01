@@ -4,17 +4,19 @@
   flex-direction: column;
   justify-content: end;
   align-items: center;
-  min-height: min(92.813vw, 312px);
-  width: min(68.75vw, 230px);
   text-align: center;
   line-height: $lh-145;
-  word-break: break-all;
+  overflow-wrap: anywhere;
   padding: 0 10px;
+  width: 100%;
+  min-height: 100%;
 
   &__img {
     position: absolute;
+    top: 0;
     z-index: -1;
-    height: 100%;
+    min-height: 100%;
+    object-fit: cover;
   }
 
   &__title {

@@ -1,7 +1,7 @@
 import Swiper from 'swiper';
-import { Navigation } from 'swiper/modules';
+import { Navigation, Pagination } from 'swiper/modules';
 
-const bestsellerSwiper = new Swiper('.slider', {
+const bestsellerSlider = new Swiper('.bestseller-slider', {
   modules: [Navigation],
   direction: 'horizontal',
   spaceBetween: 30,
@@ -10,8 +10,8 @@ const bestsellerSwiper = new Swiper('.slider', {
   centeredSlides: true,
   speed: 500,
   navigation: {
-    nextEl: '.slider__button--next',
-    prevEl: '.slider__button--prev',
+    nextEl: '.bestseller-slider__button--next',
+    prevEl: '.bestseller-slider__button--prev',
   },
   breakpoints: {
     768: {
@@ -19,4 +19,23 @@ const bestsellerSwiper = new Swiper('.slider', {
     }
   }
 });
+
+// const mainProductsSlider = new Swiper('.products-slider', {
+//   modules: [Navigation],
+//   direction: 'horizontal',
+//   spaceBetween: 30,
+//   slidesPerView: 'auto',
+//   grabCursor: true,
+//   centeredSlides: true,
+//   speed: 500,
+//   navigation: {
+//     nextEl: '.slider__button--next',
+//     prevEl: '.slider__button--prev',
+//   },
+//   breakpoints: {
+//     768: {
+//       centeredSlides: false,
+//     }
+//   }
+// });
 

@@ -1,0 +1,43 @@
+.bestseller-slider {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 40px;
+
+
+  @media (min-width: $tablet-width) {
+    gap: 14px;
+  }
+
+  &__list {
+    min-width: 0;
+  }
+
+  &__item {
+    height: min(92.813vw, 312px);
+    width: min(68.75vw, 230px);
+  }
+
+  &__buttons {
+    display: none;
+    gap: 28px;
+    margin: 2px;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      margin-right: $tablet-padding-sides;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-right: $desktop-padding-sides;
+    }
+  }
+
+  &__button {
+    &--prev {
+      transform: rotate(180deg);
+    }
+
+    &--next {}
+  }
+}
