@@ -7,6 +7,7 @@
 //Slider Swiper
 @import "../../node_modules/swiper/swiper-vars.scss";
 @import "../../node_modules/swiper/swiper.scss";
+@import "./components/bestseller-slider.scss";
 
 //Components
 @import "./components/button.scss";
@@ -18,7 +19,6 @@
 @import "./components/promo-type.scss";
 @import "./components/section-content.scss";
 @import "./components/bestseller-card.scss";
-@import "./components/bestseller-slider.scss";
 @import "./components/spoilers.scss";
 @import "./components/checkbox.scss";
 @import "./components/catalog-card.scss";
@@ -36,3 +36,4 @@
 
 //Sections Catalog
 @import "./sections/catalog-filter.scss";
+@import "./sections/products-list.scss";

@@ -2,6 +2,7 @@
   position: relative;
   padding-top: min(33.125vw, 141px);
   padding-bottom: 20px;
+  margin-bottom: clamp(20px, 2.604vw, 33px);
 
   &__wrapper {
     display: flex;

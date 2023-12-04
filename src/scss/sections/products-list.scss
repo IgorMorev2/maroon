@@ -1,0 +1,41 @@
+.products-list {
+  padding-bottom: clamp(15px, 3.255vw, 35px);
+
+  &__wrapper {}
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-bottom: min(8.125vw, 41px)
+  }
+
+  &__item {}
+
+  &__navigation {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__pagination {}
+
+  &__pagination-current {}
+
+  &__pagination-total {}
+
+  &__buttons {
+    display: flex;
+    gap: 28px;
+    margin: 2px;
+  }
+
+  &__button {
+    &--prev {
+      transform: rotate(180deg);
+    }
+
+    &--next {}
+  }
+}
