@@ -1,5 +1,5 @@
 import Swiper from 'swiper';
-import { Navigation, Pagination, Grid } from 'swiper/modules';
+import { Navigation, Pagination} from 'swiper/modules';
 
 const bestsellerSlider = new Swiper('.bestseller-slider', {
   modules: [Navigation],
@@ -24,12 +24,9 @@ const bestsellerSlider = new Swiper('.bestseller-slider', {
   }
 });
 
-const mainProductsSlider = new Swiper('.products-slider', {
-  modules: [Navigation, Pagination, Grid],
-  slidesPerView: 2,
-  grid: {
-    rows: 2,
-  },
+const recommendationsSlider = new Swiper('.products-slider', {
+  modules: [Navigation, Pagination],
+  slidesPerView: 'auto',
   spaceBetween: 50,
   speed: 500,
   navigation: {

@@ -6,6 +6,20 @@
   height: min(90.625vw, 350px);
   padding: 20px;
   cursor: pointer;
+  border-radius: $outline-radius;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &:focus-visible {
+    outline: $outline;
+    outline-offset: $outline-offset;
+  }
 
   @media (min-width: $desktop-width) {
     width: 270px;

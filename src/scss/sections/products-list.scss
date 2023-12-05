@@ -4,26 +4,60 @@
   &__wrapper {}
 
   &__list {
-    display: flex;
-    justify-content: center;
+    display: grid;
     gap: 30px;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    margin-bottom: min(8.125vw, 41px)
+    justify-content: center;
+    margin-bottom: min(8.125vw, 41px);
+
+    @media (min-width: $tablet-width) {
+      grid-template-columns: repeat(auto-fill, min(90.625vw, 324px));
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-template-columns: repeat(auto-fill, 270px);
+    }
   }
 
-  &__item {}
+  &__item {
+    flex-shrink: 1;
+  }
 
   &__navigation {
     display: flex;
     justify-content: space-between;
   }
 
-  &__pagination {}
+  &__pagination {
+    display: flex;
+    align-items: center;
+    gap: min(2.5vw, 10px);
+    font-weight: $fw-medium;
+    font-size: min(4.375vw, $fs-l);
 
-  &__pagination-current {}
+    @media (min-width: $tablet-width) {
+      position: relative;
+      left: 50%;
+      transform: translate(-50%);
+    }
 
-  &__pagination-total {}
+    &::after {
+      content: '';
+      display: block;
+      width: min(9.375vw, 50px);
+      height: 1px;
+      background-color: $color-accent;
+      order: 2;
+    }
+  }
+
+  &__pagination-current {
+    order: 1;
+  }
+
+  &__pagination-total {
+    order: 3;
+    color: $color-secondary;
+  }
 
   &__buttons {
     display: flex;
