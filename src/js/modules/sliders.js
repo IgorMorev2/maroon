@@ -14,8 +14,8 @@ const bestsellerSlider = new Swiper('.bestseller-slider', {
     enabled: true,
   },
   navigation: {
-    nextEl: '.bestseller-slider__button--next',
-    prevEl: '.bestseller-slider__button--prev',
+    nextEl: '.navigation-products-list__button--next',
+    prevEl: '.navigation-products-list__button--prev',
   },
   breakpoints: {
     768: {
@@ -30,11 +30,11 @@ const recommendationsSlider = new Swiper('.products-slider', {
   spaceBetween: 50,
   speed: 500,
   navigation: {
-    nextEl: '.products-slider__button--next',
-    prevEl: '.products-slider__button--prev',
+    nextEl: '.navigation-products-list__button--next',
+    prevEl: '.navigation-products-list__button--prev',
   },
   pagination: {
-    el: ".products-slider__pagination",
+    el: ".navigation-products-list__pagination",
     type: "fraction",
   },
 });

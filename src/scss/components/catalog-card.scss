@@ -25,10 +25,6 @@
     width: 270px;
   }
 
-  &:focus-visible {
-    outline: $outline;
-  }
-
   &__img {
     position: absolute;
     top: 0;

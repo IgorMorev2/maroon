@@ -1,5 +1,6 @@
 .products-list {
   padding-bottom: clamp(15px, 3.255vw, 35px);
+  margin-bottom: clamp(55px, 5vw, 100px);
 
   &__wrapper {}
 
@@ -22,54 +23,5 @@
     flex-shrink: 1;
   }
 
-  &__navigation {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  &__pagination {
-    display: flex;
-    align-items: center;
-    gap: min(2.5vw, 10px);
-    font-weight: $fw-medium;
-    font-size: min(4.375vw, $fs-l);
-
-    @media (min-width: $tablet-width) {
-      position: relative;
-      left: 50%;
-      transform: translate(-50%);
-    }
-
-    &::after {
-      content: '';
-      display: block;
-      width: min(9.375vw, 50px);
-      height: 1px;
-      background-color: $color-accent;
-      order: 2;
-    }
-  }
-
-  &__pagination-current {
-    order: 1;
-  }
-
-  &__pagination-total {
-    order: 3;
-    color: $color-secondary;
-  }
-
-  &__buttons {
-    display: flex;
-    gap: 28px;
-    margin: 2px;
-  }
-
-  &__button {
-    &--prev {
-      transform: rotate(180deg);
-    }
-
-    &--next {}
-  }
+  &__navigation {}
 }
