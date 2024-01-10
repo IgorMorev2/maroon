@@ -1,0 +1,42 @@
+.recommendation-slider {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  overflow: hidden;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    gap: 41px;
+    width: 678px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+
+  &__list {
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    @media (min-width: $desktop-width) {
+      flex-wrap: nowrap;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+    }
+  }
+
+  &__item {
+    width: min(90.625vw, 324px);
+
+    @media (min-width: $desktop-width) {
+      width: 270px;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.recently-viewed {
+  margin-bottom: clamp(62px, 14.6vw, 132px);
+
+  &__wrapper {}
+
+  &__title {
+    font-family: "Raleway", sans-serif;
+    font-size: min(8.75vw, $fs-xxl);
+    font-weight: $fw-medium;
+    line-height: $lh-125;
+    text-align: center;
+    overflow-wrap: break-word;
+    margin-bottom: 32px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: min(12.5vw, 51px);
+    }
+  }
+
+  &__slider {}
+
+  &__navigation {}
+}

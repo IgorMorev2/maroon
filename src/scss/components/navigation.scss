@@ -49,30 +49,30 @@
 
   &--menu-open {
     @media (max-width: $tablet-width) {
-    .navigation__menu {
-      position: absolute;
-      top: 100%;
-      left: 0;
-      font-family: "Raleway", sans-serif;
-      background-color: $bg-color-accent;
-      width: 100%;
-      padding-top: min(10.5vw, 43px);
-      padding-bottom: min(14.064vw, 55px);
-      border-top: 1px solid $border-color-header;
-      box-shadow: 0px 4px 40px $shadow-color;
-      z-index: 2;
-    }
+      .navigation__menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        font-family: "Raleway", sans-serif;
+        background-color: $bg-color-accent;
+        width: 100%;
+        padding-top: min(10.5vw, 43px);
+        padding-bottom: min(14.064vw, 55px);
+        border-top: 1px solid $border-color-header;
+        box-shadow: 0px 4px 40px $shadow-color;
+        z-index: 2;
+      }
 
-    .navigation__list {
-      flex-direction: column;
-      font-size: min(8.75vw, $fs-xxl);
-      line-height: $lh-125;
-    }
+      .navigation__list {
+        flex-direction: column;
+        font-size: min(8.75vw, $fs-xxl);
+        line-height: $lh-125;
+      }
 
-    .navigation__socials {
+      .navigation__socials {
         display: flex;
+      }
     }
-  }
   }
 
   &--menu-close {
@@ -138,8 +138,9 @@
     gap: min(10.938vw, 45px);
     width: 100%;
 
-    @media (min-width: $tablet-width) {
-      padding: 0;
+    @media (min-width: ($tablet-width + 1)) {
+      padding-left: 0;
+      padding-right: 0;
     }
   }
 

@@ -1,8 +1,12 @@
 .catalog-filter {
   position: relative;
-  padding-top: min(33.125vw, 141px);
+  padding-top: min(33.125vw, 139px);
   padding-bottom: 20px;
-  margin-bottom: clamp(20px, 2.604vw, 33px);
+  margin-bottom: clamp(19px, 2.604vw, 33px);
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 16px;
+  }
 
   &__wrapper {
     display: flex;
@@ -12,7 +16,7 @@
 
   &__title {
     font-family: "Raleway", sans-serif;
-    font-size: min(8.75vw, $fs-xxl);
+    font-size: min(8.75vw, $fs-3xl);
     line-height: $lh-130;
     font-weight: $fw-medium;
     word-wrap: break-word;

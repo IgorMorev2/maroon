@@ -8,6 +8,8 @@
 @import "../../node_modules/swiper/swiper-vars.scss";
 @import "../../node_modules/swiper/swiper.scss";
 @import "./components/bestseller-slider.scss";
+@import "./components/recommendation-slider.scss";
+
 
 //Components
 @import "./components/button.scss";
@@ -38,3 +40,4 @@
 //Sections Catalog
 @import "./sections/catalog-filter.scss";
 @import "./sections/products-list.scss";
+@import "./sections/recently-viewed.scss";
