@@ -2,7 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: min(5.938vw, 23px) clamp(30px, 6.51vw, 69px);
+  // gap: clamp(30px, 6.51vw, 47px);
+  gap: min(3.9vw, 47px);
 
   &--header {
     .navigation__logo {

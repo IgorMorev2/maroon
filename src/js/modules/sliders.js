@@ -53,7 +53,7 @@ if (document.querySelector('.recommendation-slider')) {
         slidesPerGroup: 2,
       },
       1366: {
-        slidesPerView: 4,
+        slidesPerView: 'auto',
         grid: {
           rows: 1,
         },

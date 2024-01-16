@@ -17,7 +17,21 @@
     }
   }
 
-  &__slider {}
+  &__slider {
+
+    @media(min-width: $tablet-width) {
+      margin: 0 auto;
+    }
+
+    @media(min-width: $desktop-width) {
+      margin-left: -7px;
+      margin-top: -7px;
+    }
+
+    .swiper-slide {
+      padding: 7px 0px 7px 7px;
+    }
+  }
 
   &__navigation {}
 }

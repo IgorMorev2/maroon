@@ -8,11 +8,10 @@
   @media (min-width: $tablet-width) {
     gap: 41px;
     width: 678px;
-    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
-    width: 100%;
+    width: calc(100% + 7px);
   }
 
   &__list {
