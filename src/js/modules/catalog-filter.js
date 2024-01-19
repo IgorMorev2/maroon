@@ -71,8 +71,8 @@ const resetFilterForm = () => {
 
   filterProducts = [...productsWithoutRepeats];
   closeFilter();
-}
+};
 
-filter.addEventListener('reset', resetFilterForm)
+filter.addEventListener('reset', resetFilterForm);
 
 export { filter, filterProducts };

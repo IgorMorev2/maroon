@@ -4,11 +4,11 @@ import { filter, filterProducts } from "./catalog-filter.js"
 const productsList = document.querySelector('.products-list__list');
 
 let currentPage = 1;
-const productsPerPage = 8;
+const PRODUCTS_PER_PAGE = 4;
 let currentProducts = products;
 
 const updatePagination = (currentPage, products) => {
-  paginationTotal.textContent = String(Math.ceil(products.length / productsPerPage));
+  paginationTotal.textContent = String(Math.ceil(products.length / PRODUCTS_PER_PAGE));
   paginationCurrent.textContent = String(currentPage);
 };
 
@@ -23,7 +23,6 @@ const paginationButtonNext = productsListNavigation.querySelector('.navigation-p
 paginationButtonNext.addEventListener('click', () => {
   if (+paginationCurrent.textContent !== +paginationTotal.textContent) {
     currentPage++;
-    paginationCurrent.textContent = String(currentPage);
 
     loadPage(currentPage, currentProducts);
 
@@ -40,7 +39,6 @@ paginationButtonNext.addEventListener('click', () => {
 paginationButtonPrev.addEventListener('click', () => {
   if (+paginationCurrent.textContent !== 1) {
     currentPage--;
-    paginationCurrent.textContent = String(currentPage);
 
     loadPage(currentPage, currentProducts);
 
@@ -84,16 +82,14 @@ const displayProducts = (products) => {
 }
 
 const loadPage = (currentPage, products) => {
-  const startIndex = (currentPage - 1) * productsPerPage;
-  const endIndex = startIndex + productsPerPage;
+  const startIndex = (currentPage - 1) * PRODUCTS_PER_PAGE;
+  const endIndex = startIndex + PRODUCTS_PER_PAGE;
   const productsToShow = products.slice(startIndex, endIndex);
 
-  paginationButtonPrev.disabled = true;
-  paginationButtonNext.disabled = false;
-
-  if (products.length <= productsPerPage) {
+  if (products.length <= PRODUCTS_PER_PAGE) {
     productsListNavigation.style.display = 'none';
   } else {
+    productsListNavigation.style.display = 'flex';
     updatePagination(currentPage, products);
   }
 
@@ -108,7 +104,6 @@ filter.addEventListener('submit', (evt) => {
 
   currentPage = 1;
   currentProducts = filterProducts;
-  // updatePagination(currentPage, currentProducts);
 
   loadPage(currentPage, currentProducts);
 });
@@ -116,7 +111,6 @@ filter.addEventListener('submit', (evt) => {
 filter.addEventListener('reset', () => {
   currentPage = 1;
   currentProducts = products;
-  // updatePagination(currentPage, currentProducts);
 
   loadPage(currentPage, currentProducts);
 });
