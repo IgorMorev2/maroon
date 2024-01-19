@@ -9,7 +9,7 @@ const getData = async (path) => {
   return data
 }
 
-const path = '../files/data.json';
+const path = './files/data.json';
 const data = await getData(path);
 
 const products = data.products;

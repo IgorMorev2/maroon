@@ -1,27 +1,78 @@
+import { products } from "./get-data.js";
+
+
 const catalogFilter = document.querySelector('.catalog-filter');
+const filter = catalogFilter.querySelector('.catalog-filter__filter');
 
-if (catalogFilter) {
-  const buttonOpen = document.querySelector('.catalog-filter__button-open-popup');
-  const buttonClose = document.querySelector('.catalog-filter__button-close-popup');
-  const filter = document.querySelector('.catalog-filter__filter');
+// Открытие и закрытие окна фильтра
+const buttonOpen = catalogFilter.querySelector('.catalog-filter__button-open-popup');
+const buttonClose = catalogFilter.querySelector('.catalog-filter__button-close-popup');
 
-  const openFilter = () => {
-    buttonOpen.style.display = 'none';
-    buttonClose.style.display = 'block';
-    buttonClose.focus();
-    filter.style.display = 'block';
+const openFilter = () => {
+  buttonOpen.style.display = 'none';
+  buttonClose.style.display = 'block';
+  buttonClose.focus();
+  filter.style.display = 'block';
 
-    buttonClose.addEventListener('click', closeFilter, {once: true});
-  }
+  buttonOpen.removeEventListener('click', openFilter);
 
-  const closeFilter = () => {
-    buttonClose.style.display = 'none';
-    buttonOpen.style.display = 'block';
-    buttonOpen.focus();
-    filter.style.display = 'none';
-
-    buttonOpen.addEventListener('click', openFilter, {once: true});
-  }
-
-  buttonOpen.addEventListener('click', openFilter, {once: true});
+  buttonClose.addEventListener('click', closeFilter);
 }
+
+const closeFilter = () => {
+  buttonClose.style.display = 'none';
+  buttonOpen.style.display = 'block';
+  buttonOpen.focus();
+  filter.style.display = 'none';
+
+  buttonClose.removeEventListener('click', closeFilter);
+
+  buttonOpen.addEventListener('click', openFilter);
+}
+
+buttonOpen.addEventListener('click', openFilter);
+
+const productsWithoutRepeats = new Set();
+let filterProducts = [];
+
+//Реализация фильтрования
+
+const submitFilterForm = (evt) => {
+  evt.preventDefault();
+
+  productsWithoutRepeats.clear();
+
+  const dataForm = new FormData(filter);
+
+  for (let [key, value] of dataForm) {
+    products.forEach((product) => {
+      const skinTypeCondition = (key === 'skin-type' && value === product['skin-type']);
+      const categoryCondition = (key === product.category && value === product.subcategory);
+
+      if (skinTypeCondition || categoryCondition) {
+        productsWithoutRepeats.add(product);
+      }
+    });
+  }
+
+  filterProducts = [...productsWithoutRepeats];
+  closeFilter();
+};
+
+filter.addEventListener('submit', submitFilterForm);
+
+//Реализация сброса значений формы
+const resetFilterForm = () => {
+  productsWithoutRepeats.clear();
+
+  products.forEach((product) => {
+    productsWithoutRepeats.add(product);
+  })
+
+  filterProducts = [...productsWithoutRepeats];
+  closeFilter();
+}
+
+filter.addEventListener('reset', resetFilterForm)
+
+export { filter, filterProducts };
