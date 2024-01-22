@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.min.css?_v=20240119225112">
+  <link rel="stylesheet" href="css/style.min.css?_v=20240122181405">
   <title>Maroon - Каталог</title>
 </head>
 
@@ -206,6 +206,7 @@
           </div>
         </fieldset>
       </div>
+      <p class="catalog-filter__error-text">Заполните фильтр</p>
 
       <div class="catalog-filter__buttons">
         <button class="catalog-filter__submit-button button button--submit" type="submit">Применить</button>
@@ -219,33 +220,38 @@
   <div class="products-list__wrapper wrapper">
     <h2 class="visually-hidden">Список товаров</h2>
 
-    <div class="products-list__container">
-      <ul class="products-list__list"></ul>
+    <ul class="products-list__list"></ul>
 
-      <div class="products-list__navigation navigation-products-list">
-        <div class="navigation-products-list__buttons">
-          <button class="navigation-products-list__button navigation-products-list__button--prev button-icon button-icon--arrow" disabled>
-            <span class="visually-hidden">Предыдущий слайд</span>
-            <svg class="icon icon--arrow">
-              <use href="./img/icons/icons.svg#arrow"></use>
-            </svg>
-          </button>
+    <div class="products-list__navigation navigation-products-list">
+      <div class="navigation-products-list__buttons">
+        <button
+          class="navigation-products-list__button navigation-products-list__button--prev button-icon button-icon--arrow"
+          disabled>
+          <span class="visually-hidden">Предыдущий слайд</span>
+          <svg class="icon icon--arrow">
+            <use href="./img/icons/icons.svg#arrow"></use>
+          </svg>
+        </button>
 
-          <button class="navigation-products-list__button navigation-products-list__button--next button-icon button-icon--arrow">
-            <span class="visually-hidden">Следующий слайд</span>
-            <svg class="icon icon--arrow">
-              <use href="./img/icons/icons.svg#arrow"></use>
-            </svg>
-          </button>
-        </div>
-
-        <div class="navigation-products-list__pagination">
-          <span class="navigation-products-list__pagination-current">1</span>
-          <span class="navigation-products-list__pagination-total">3</span>
-        </div>
+        <button
+          class="navigation-products-list__button navigation-products-list__button--next button-icon button-icon--arrow">
+          <span class="visually-hidden">Следующий слайд</span>
+          <svg class="icon icon--arrow">
+            <use href="./img/icons/icons.svg#arrow"></use>
+          </svg>
+        </button>
       </div>
 
+      <div class="navigation-products-list__pagination">
+        <span class="navigation-products-list__pagination-current">1</span>
+        <span class="navigation-products-list__pagination-total">3</span>
+      </div>
     </div>
+
+    <p class="products-list__text-empty">
+      К сожалению, на данный момент интересующие вас товары отсутствуют в нашем магазине.
+    </p>
+
   </div>
 </section>
 
@@ -617,8 +623,8 @@
   </div>
 </footer>
 
-  <script src="https://api-maps.yandex.ru/v3/?apikey=eeb4433f-7684-4e03-a476-2f48e0f96cb5&lang=ru_RU&_v=20240119225112"></script>
-  <script src="js/app.min.js?_v=20240119225112" type="module"></script>
+  <script src="https://api-maps.yandex.ru/v3/?apikey=eeb4433f-7684-4e03-a476-2f48e0f96cb5&lang=ru_RU&_v=20240122181405"></script>
+  <script src="js/app.min.js?_v=20240122181405" type="module"></script>
   <template id="bestseller-card">
   <div class="besteller-card">
     <img class="bestseller-card__img" src="" srcset="" alt="">
