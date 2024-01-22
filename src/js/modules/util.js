@@ -20,4 +20,10 @@ const getRandomPositiveInteger = (number1, number2 = 0) => {
   return Math.floor(Math.random() * (max - min) + min)
 }
 
-export {isWebp, getRandomPositiveInteger}
+const isValidateForm = (form) => {
+  const dataForm = new FormData(form);
+
+  return !dataForm.entries().next().value
+}
+
+export {isWebp, getRandomPositiveInteger, isValidateForm}

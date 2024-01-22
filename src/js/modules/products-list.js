@@ -1,7 +1,9 @@
-import { products } from "./get-data.js"
-import { filter, filterProducts } from "./catalog-filter.js"
+import { products } from "./get-data.js";
+import { filter, filterProducts } from "./catalog-filter.js";
+import { isValidateForm } from "./util.js";
 
 const productsList = document.querySelector('.products-list__list');
+const emptyText = document.querySelector('.products-list__text-empty');
 
 let currentPage = 1;
 const PRODUCTS_PER_PAGE = 4;
@@ -11,7 +13,6 @@ const updatePagination = (currentPage, products) => {
   paginationTotal.textContent = String(Math.ceil(products.length / PRODUCTS_PER_PAGE));
   paginationCurrent.textContent = String(currentPage);
 };
-
 
 const productsListNavigation = document.querySelector('.products-list__navigation');
 
@@ -92,20 +93,23 @@ const loadPage = (currentPage, products) => {
     productsListNavigation.style.display = 'flex';
     updatePagination(currentPage, products);
   }
+  products.length === 0 ? emptyText.style.display = 'block' : emptyText.style.display = 'none';
 
   displayProducts(productsToShow);
 }
 
 loadPage(currentPage, currentProducts);
 
-//Отработка фильтра
+// Отработка фильтра
 filter.addEventListener('submit', (evt) => {
   evt.preventDefault();
 
-  currentPage = 1;
-  currentProducts = filterProducts;
+  if (!isValidateForm(filter)) {
+    currentPage = 1;
+    currentProducts = filterProducts;
 
-  loadPage(currentPage, currentProducts);
+    loadPage(currentPage, currentProducts);
+  }
 });
 
 filter.addEventListener('reset', () => {

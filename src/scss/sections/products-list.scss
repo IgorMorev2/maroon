@@ -2,16 +2,21 @@
   padding-bottom: clamp(15px, 3.255vw, 35px);
   margin-bottom: clamp(49px, 10.5vw, 90px);
 
-  &__wrapper {}
-
-  &__container {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: min(25.6vw, 300px);
   }
 
   &__list {
     display: grid;
     gap: 30px;
     justify-content: center;
-    margin-bottom: min(7.4vw, 40px);
+
+    // &:not(:last-child) {
+    //   /
+    // }
 
     @media (min-width: $tablet-width) {
       grid-template-columns: repeat(auto-fill, min(90.625vw, 324px));
@@ -26,5 +31,17 @@
     flex-shrink: 1;
   }
 
-  &__navigation {}
+  &__navigation {
+    margin-top: min(7.4vw, 40px);
+  }
+
+  &__text-empty {
+    display: none;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    font-size: min(8.75vw, 2rem);
+    line-height: 130%;
+    font-weight: 500;
+    word-wrap: break-word;
+  }
 }
