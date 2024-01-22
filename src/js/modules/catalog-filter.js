@@ -3,12 +3,13 @@ import { isValidateForm } from "./util.js";
 
 
 const catalogFilter = document.querySelector('.catalog-filter');
-const filter = catalogFilter.querySelector('.catalog-filter__filter');
-const errorText = catalogFilter.querySelector('.catalog-filter__error-text');
+const filter = document.querySelector('.catalog-filter__filter');
+const errorText = document.querySelector('.catalog-filter__error-text');
+// console.log(filter)
 
 // Открытие и закрытие окна фильтра
-const buttonOpen = catalogFilter.querySelector('.catalog-filter__button-open-popup');
-const buttonClose = catalogFilter.querySelector('.catalog-filter__button-close-popup');
+const buttonOpen = document.querySelector('.catalog-filter__button-open-popup');
+const buttonClose = document.querySelector('.catalog-filter__button-close-popup');
 
 const openFilter = () => {
   buttonOpen.style.display = 'none';
@@ -33,7 +34,9 @@ const closeFilter = () => {
   buttonOpen.addEventListener('click', openFilter);
 }
 
-buttonOpen.addEventListener('click', openFilter);
+if (buttonOpen) {
+  buttonOpen.addEventListener('click', openFilter);
+}
 
 const productsWithoutRepeats = new Set();
 let filterProducts = [];
@@ -67,8 +70,6 @@ const submitFilterForm = (evt) => {
 
 };
 
-filter.addEventListener('submit', submitFilterForm);
-
 //Реализация сброса значений формы
 const resetFilterForm = () => {
   productsWithoutRepeats.clear();
@@ -81,6 +82,9 @@ const resetFilterForm = () => {
   closeFilter();
 };
 
-filter.addEventListener('reset', resetFilterForm);
+if (filter) {
+  filter.addEventListener('submit', submitFilterForm);
+  filter.addEventListener('reset', resetFilterForm);
+}
 
 export { filter, filterProducts };
