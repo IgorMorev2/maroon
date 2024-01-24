@@ -1,0 +1,90 @@
+.product-info {
+  padding-top: min(33.125vw, 139px);
+  padding-bottom: clamp(80px, 15.625vw, 140px);
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: center;
+    gap: clamp(50px, 7.81vw, 70px)
+  }
+
+  &__image {
+    flex: 0 0 min(90.63vw, 678px);
+    height: clamp(260px, 61.2vw, 647px);
+    object-fit: cover;
+
+    @media (min-width: ($tablet-width + 1)) {
+      flex-basis: 630px;
+    }
+  }
+
+  &__content {
+    flex-grow: 1;
+    flex-basis: 370px;
+  }
+
+  &__title {
+    font-family: 'Raleway', sans-serif;
+    font-size: min(8.75vw, $fs-xxl);
+    line-height: $lh-125;
+    font-weight: $fw-medium;
+    word-wrap: break-word;
+    margin-bottom: 15px;
+  }
+
+  &__subtitle {
+    display: block;
+    color: $color-secondary;
+    text-transform: lowercase;
+    margin-bottom: min(9.375vw, 45px);
+  }
+
+  &__description {
+    &+& {
+      margin-top: 1em;
+    }
+
+    &:last-of-type {
+      margin-bottom: min(12.5vw, 45px)
+    }
+  }
+
+  &__spoilers {
+    margin-bottom: min(12.5vw, 45px);
+  }
+
+  &__form {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    row-gap: min(12.5vw, 45px);;
+    column-gap: min(10.94vw, 50px);
+  }
+
+  &__form-fieldset {
+    grid-column: span 2;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  &__form-title {
+    font-size: min(5vw, $fs-l);
+    font-weight: $fw-medium;
+  }
+
+  &__price {
+    display: flex;
+    gap: 5px;
+    font-size: min(6.875vw, $fs-xl);
+    font-weight: $fw-medium;
+
+    &::after {
+      content: '\20BD';
+    }
+  }
+
+  &__cart-button {}
+
+}

@@ -3,6 +3,12 @@
   padding-left: 1.625em;
   color: $color-secondary;
 
+  &--radio {
+    color: $color-accent;
+    font-weight: 500;
+    font-size: min(5vw, $fs-l);
+  }
+
   &:hover {
     opacity: 0.8;
   }
@@ -15,7 +21,7 @@
     color: $color-accent;
   }
 
-  &__input:checked + &__control::before {
+  &__input:checked+&__control::before {
     content: '';
     position: absolute;
     top: 50%;
@@ -27,7 +33,7 @@
     background-color: $color-accent;
   }
 
-  &__input:focus-visible + &__control {
+  &__input:focus-visible+&__control {
     outline: $outline;
   }
 
