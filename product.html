@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.min.css?_v=20240124143520">
-  <title>Maroon - Каталог</title>
+  <title>Maroon - Карточка товара</title>
 </head>
 
 
@@ -88,179 +88,66 @@
 </header>
 
   <main>
-    <header class="catalog-filter">
-  <div class="catalog-filter__wrapper wrapper">
-    <h1 class="catalog-filter__title">Каталог</h1>
+    <section class="product-info">
+  <div class="product-info__wrapper wrapper">
+    <img class="product-info__image" src="./img/catalog-data/rose.jpg" srcset="./img/catalog-data/rose@2x.jpg"
+      alt="Sun">
 
-    <button class="catalog-filter__button-open-popup button">Фильтр</button>
-    <button class="catalog-filter__button-close-popup button-icon button-icon--close-button">
-      <span class="visually-hidden">Кнопка закрытия фильтра</span>
-      <svg class="icon icon--close-button">
-        <use href="./img/icons/icons.svg#close-button"></use>
-      </svg>
-    </button>
+    <div class="product-info__content">
+      <h1 class="product-info__title">Rose</h1>
+      <span class="product-info__subtitle">Крем для лица</span>
 
-    <form class="catalog-filter__filter wrapper" action="" method="">
-      <h2 class="visually-hidden">Фильтр каталога</h2>
+      <p class="product-info__description">Увлажняющий крем идеально подходит для повседневного ухода за молодой кожей.
+      </p>
+      <p class="product-info__description">Крем равномерно распределяется по поверхности благодаря легкой текстуре,
+        обеспечивает глубокое увлажнение, регенерацию клеток.</p>
 
-      <div class="catalog-filter__spoilers spoilers" data-spoilers="767, max">
-        <fieldset class="spoilers__item">
-          <button class="spoilers__title" data-spoiler>Уход для лица</button>
+      <div class="product-info__spoilers spoilers" data-spoilers>
+        <div class="spoilers__item">
+          <button class="spoilers__title" data-spoiler>Состав</button>
           <div class="spoilers__content">
-            <div class="spoilers__content-container">
-              <label class="checkbox">
-                <input class="checkbox__input visually-hidden" type="checkbox" name="facial-care" value="creams">
-                <span class="checkbox__control"></span>
-                Крема
-              </label>
-              <label class="checkbox">
-                <input class="checkbox__input visually-hidden" type="checkbox" name="facial-care" value="serums">
-                <span class="checkbox__control"></span>
-                Сыворотки
-              </label>
-              <label class="checkbox">
-                <input class="checkbox__input visually-hidden" type="checkbox" name="facial-care" value="masks">
-                <span class="checkbox__control"></span>
-                Маски
-              </label>
-              <label class="checkbox">
-                <input class="checkbox__input visually-hidden" type="checkbox" name="facial-care" value="foams">
-                <span class="checkbox__control"></span>
-                Пенки
-              </label>
-              <label class="checkbox">
-                <input class="checkbox__input visually-hidden" type="checkbox" name="facial-care" value="tonics">
-                <span class="checkbox__control"></span>
-                Тоники
-              </label>
-              <label class="checkbox">
-                <input class="checkbox__input visually-hidden" type="checkbox" name="facial-care" value="powders">
-                <span class="checkbox__control"></span>
-                Пудры
-              </label>
-            </div>
+            Aqua, Cyclomethicone, Dicaprylyl Carbonate, Butylene Glycol, Glycerin, Tapioca
+            Starch, Nelumbium Speciosum Flower Extract, Calendula Officinalis Flower Extract, Propylene Glycol,
+            Tocopherol, Glycine Soja Oil, Dimethiconol, Citronellol, Limonene.
           </div>
-        </fieldset>
-        <fieldset class="spoilers__item">
-          <button class="spoilers__title" data-spoiler>Уход для тела</button>
+        </div>
+        <div class="spoilers__item">
+          <button class="spoilers__title" data-spoiler>Способ применения</button>
           <div class="spoilers__content">
-            <div class="spoilers__content-container">
-              <label class="checkbox">
-                <input class="checkbox__input visually-hidden" type="checkbox" name="body-care" value="creams">
-                <span class="checkbox__control"></span>
-                Крема
-              </label>
-              <label class="checkbox">
-                <input class="checkbox__input visually-hidden" type="checkbox" name="body-care" value="oils">
-                <span class="checkbox__control"></span>
-                Масла
-              </label>
-              <label class="checkbox">
-                <input class="checkbox__input visually-hidden" type="checkbox" name="body-care" value="scrubs">
-                <span class="checkbox__control"></span>
-                Скрабы
-              </label>
-              <label class="checkbox">
-                <input class="checkbox__input visually-hidden" type="checkbox" name="body-care" value="soaps">
-                <span class="checkbox__control"></span>
-                Мыло
-              </label>
-              <label class="checkbox">
-                <input class="checkbox__input visually-hidden" type="checkbox" name="body-care" value="bombs">
-                <span class="checkbox__control"></span>
-                Бомбочки для ванны
-              </label>
-              <label class="checkbox">
-                <input class="checkbox__input visually-hidden" type="checkbox" name="body-care" value="salts">
-                <span class="checkbox__control"></span>
-                Соль для ванны
-              </label>
-            </div>
+            Нанесите крем на очищенную кожу лица легкими массажными круговыми движениями, избегая области вокруг глаз.
+            Подходит для дневного и ночного ухода.
           </div>
+        </div>
+      </div>
+
+      <form action="#" class="product-info__form">
+        <fieldset class="product-info__form-fieldset">
+          <span class="product-info__form-title">Объём:</span>
+
+          <label class="checkbox checkbox--radio">
+            <input class="checkbox__input visually-hidden" type="radio" name="volume" value="50ml">
+            <span class="checkbox__control"></span>
+            50ml
+          </label>
+          <label class="checkbox checkbox--radio">
+            <input class="checkbox__input visually-hidden" type="radio" name="volume" value="30ml">
+            <span class="checkbox__control"></span>
+            30ml
+          </label>
         </fieldset>
-        <fieldset class="spoilers__item">
-          <button class="spoilers__title spoilers__title--without-border" data-spoiler>Тип кожи</button>
-          <div class="spoilers__content">
-            <div class="spoilers__content-container">
-              <label class="checkbox">
-                <input class="checkbox__input visually-hidden" type="checkbox" name="skin-type" value="normal">
-                <span class="checkbox__control"></span>
-                Нормальная
-              </label>
-              <label class="checkbox">
-                <input class="checkbox__input visually-hidden" type="checkbox" name="skin-type" value="dry">
-                <span class="checkbox__control"></span>
-                Сухая
-              </label>
-              <label class="checkbox">
-                <input class="checkbox__input visually-hidden" type="checkbox" name="skin-type" value="fat">
-                <span class="checkbox__control"></span>
-                Жирная
-              </label>
-              <label class="checkbox">
-                <input class="checkbox__input visually-hidden" type="checkbox" name="skin-type" value="combined">
-                <span class="checkbox__control"></span>
-                Комбинированная
-              </label>
-            </div>
-          </div>
-        </fieldset>
-      </div>
-      <p class="catalog-filter__error-text">Заполните фильтр</p>
-
-      <div class="catalog-filter__buttons">
-        <button class="catalog-filter__submit-button button button--submit" type="submit">Применить</button>
-        <button class="catalog-filter__reset-button button" type="reset">Сбросить</button>
-      </div>
-    </form>
-  </div>
-</header>
-
-    <section class="products-list">
-  <div class="products-list__wrapper wrapper">
-    <h2 class="visually-hidden">Список товаров</h2>
-
-    <ul class="products-list__list"></ul>
-
-    <div class="products-list__navigation navigation-products-list">
-      <div class="navigation-products-list__buttons">
-        <button
-          class="navigation-products-list__button navigation-products-list__button--prev button-icon button-icon--arrow"
-          disabled>
-          <span class="visually-hidden">Предыдущий слайд</span>
-          <svg class="icon icon--arrow">
-            <use href="./img/icons/icons.svg#arrow"></use>
-          </svg>
-        </button>
-
-        <button
-          class="navigation-products-list__button navigation-products-list__button--next button-icon button-icon--arrow">
-          <span class="visually-hidden">Следующий слайд</span>
-          <svg class="icon icon--arrow">
-            <use href="./img/icons/icons.svg#arrow"></use>
-          </svg>
-        </button>
-      </div>
-
-      <div class="navigation-products-list__pagination">
-        <span class="navigation-products-list__pagination-current">1</span>
-        <span class="navigation-products-list__pagination-total">3</span>
-      </div>
+        <span class="product-info__price">890</span>
+        <button class="product-info__cart-button button" type="submit">Добавить в корзину</button>
+      </form>
     </div>
-
-    <p class="products-list__text-empty">
-      К сожалению, на данный момент интересующие вас товары отсутствуют в нашем магазине.
-    </p>
-
   </div>
 </section>
 
-    <section class="recently-viewed">
-  <div class="recently-viewed__wrapper wrapper">
-    <h2 class="visually-hidden">Недавно просмотренные товары</h2>
-    <p class="recently-viewed__title">Вы недавно смотрели</p>
+    <section class="recommendation">
+  <div class="recommendation__wrapper wrapper">
+    <h2 class="visually-hidden">Рекоммендуемые товары</h2>
+    <p class="recommendation__title">Вам также может понравиться</p>
 
-    <div class="recently-viewed__slider recommendation-slider">
+    <div class="recommendation__slider recommendation-slider">
       <ol class="recommendation-slider__list swiper-wrapper">
         <li class="recommendation-slider__item swiper-slide">
           <a href="./product.html" class="catalog-card">
@@ -432,7 +319,7 @@
         </li>
       </ol>
 
-      <div class="recently-viewed__navigation navigation-products-list">
+      <div class="recommendation__navigation navigation-products-list">
         <div class="navigation-products-list__buttons">
           <button
             class="navigation-products-list__button navigation-products-list__button--prev button-icon button-icon--arrow">
@@ -457,97 +344,6 @@
     </div>
   </div>
 </section>
-
-    <footer>
-  <section class="subscription">
-  <div class="subscription__wrapper wrapper">
-    <h2 class="visually-hidden">Подписка на аккаунт</h2>
-    <div class="subscription__content section-content">
-      <p class="section-content__title">Присоединяйтесь к нам</p>
-      <p class="section-content__text">Подпишитесь на наш аккаунт <a class="section-content__link"
-          href="#">@marooncare</a> и узнавайте о новиках и акциях первыми</p>
-      <button class="section-content__button button">Подписаться</button>
-    </div>
-
-    <ul class="subscription__photos-list photos-list">
-      <li class="photos-list__photo">
-        <picture><source srcset="./img/subscription/photos-01.webp, ./img/subscription/photos-01@2x.webp" type="image/webp"><img src="./img/subscription/photos-01.jpg" srcset="./img/subscription/photos-01@2x.jpg" alt="Фото с аккаунта"></picture>
-      </li>
-      <li class="photos-list__photo">
-        <picture><source srcset="./img/subscription/photos-02.webp, ./img/subscription/photos-02@2x.webp" type="image/webp"><img src="./img/subscription/photos-02.jpg" srcset="./img/subscription/photos-02@2x.jpg" alt="Фото с аккаунта"></picture>
-      </li>
-      <li class="photos-list__photo">
-        <picture><source srcset="./img/subscription/photos-03.webp, ./img/subscription/photos-03@2x.webp" type="image/webp"><img src="./img/subscription/photos-03.jpg" srcset="./img/subscription/photos-03@2x.jpg" alt="Фото с аккаунта"></picture>
-      </li>
-      <li class="photos-list__photo">
-        <picture><source srcset="./img/subscription/photos-04.webp, ./img/subscription/photos-04@2x.webp" type="image/webp"><img src="./img/subscription/photos-04.jpg" srcset="./img/subscription/photos-04@2x.jpg" alt="Фото с аккаунта"></picture>
-      </li>
-      <li class="photos-list__photo">
-        <picture><source srcset="./img/subscription/photos-05.webp, ./img/subscription/photos-05@2x.webp" type="image/webp"><img src="./img/subscription/photos-05.jpg" srcset="./img/subscription/photos-05@2x.jpg" alt="Фото с аккаунта"></picture>
-      </li>
-      <li class="photos-list__photo">
-        <picture><source srcset="./img/subscription/photos-06.webp, ./img/subscription/photos-06@2x.webp" type="image/webp"><img src="./img/subscription/photos-06.jpg" srcset="./img/subscription/photos-06@2x.jpg" alt="Фото с аккаунта"></picture>
-      </li>
-    </ul>
-  </div>
-</section>
-
-  <section class="contacts">
-  <div class="contacts__wrapper wrapper">
-    <div class="contacts__container">
-      <h2 class="contacts__title">Контакты</h2>
-
-      <address class="contacts__content">
-        <dl class="contacts__list contacts-list">
-          <dt class="contacts-list__title">Адрес</dt>
-          <dd class="contacts-list__item">Санкт-Петербург,<br> ул. Большая Конюшенная, 19</dd>
-
-          <dt class="contacts-list__title">Телефон</dt>
-          <dd class="contacts-list__item">
-            <a class="contacts-list__link" href="tel:+79238889060">+7 (923) 888-90-60</a>
-          </dd>
-
-          <dt class="contacts-list__title">E-mail</dt>
-          <dd class="contacts-list__item">
-            <a class="contacts-list__link" href="mailto:info@maroon.ru">info@maroon.ru</a>
-          </dd>
-        </dl>
-
-        <ul class="contacts__socials socials">
-          <li class="socials__item">
-            <a href="#" class="socials__link socials__link--facebook">
-              <span class="visually-hidden">Фейсбук</span>
-              <svg class="icon">
-                <use href="./img/icons/icons.svg#facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="socials__item">
-            <a href="#" class="socials__link socials__link--instagram">
-              <span class="visually-hidden">Инстаграм</span>
-              <svg class="icon">
-                <use href="./img/icons/icons.svg#instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="socials__item">
-            <a href="#" class="socials__link socials__link--twitter">
-              <span class="visually-hidden">Твиттер</span>
-              <svg class="icon">
-                <use href="./img/icons/icons.svg#twitter"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </address>
-
-      <div class="contacts__map">
-      </div>
-    </div>
-  </div>
-</section>
-
-</footer>
 
   </main>
   <footer class="footer">
